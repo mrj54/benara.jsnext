@@ -37,7 +37,7 @@ export default function LearningDashboard() {
         <header className="flex justify-between items-center mb-10 relative z-[1]">
           <div className="flex items-center gap-3 z-50">
             <Image
-              src="/images/owl-mascot.png"
+              src="/images/benara-logo.png"
               alt="Benara Logo"
               width={48}
               height={48}
@@ -46,7 +46,7 @@ export default function LearningDashboard() {
             <span className="text-2xl font-extrabold text-[#5b8585] drop-shadow-md">Benara.</span>
           </div>
           <div className="flex items-center gap-3 z-50">
-            <div className="text-base font-semibold text-[#555]">Halo, {userData.nama}</div>
+            <div className="hidden md:block text-base font-semibold text-[#555]">Halo, {userData.nama}</div>
             <Link href="/profile" className="block">
               <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#5b8585] to-[#729fb1] flex items-center justify-center text-white text-lg shadow-[0_4px_10px_rgba(91,133,133,0.3)] cursor-pointer transition-all hover:scale-110 hover:shadow-[0_6px_15px_rgba(91,133,133,0.4)]">
                 <User size={20} />

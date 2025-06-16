@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Star, MessageCircle, Book, Award } from "lucide-react"
+import { ArrowLeft, Star, MessageCircle, Book, Award, Heart, Target } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function PengertianPage() {
@@ -66,6 +66,129 @@ export default function PengertianPage() {
       ),
       icon: <Book className="w-6 h-6" />,
       color: "bg-blue-100 text-blue-600",
+    },
+    {
+      id: "beriman",
+      title: "Beriman kepada Nabi dan Rasul",
+      content: (
+        <div className="space-y-4">
+          <p>
+            Beriman kepada nabi dan rasul adalah salah satu rukun iman yang wajib diyakini oleh setiap muslim. Ini berarti kita harus:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">
+              <h3 className="font-bold text-blue-700 mb-2 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center">
+                  <span className="text-blue-700">1</span>
+                </div>
+                Meyakini Keberadaan Mereka
+              </h3>
+              <p className="text-blue-800">
+                Percaya bahwa Allah telah mengutus para nabi dan rasul untuk membimbing manusia.
+              </p>
+            </div>
+
+            <div className="bg-purple-50 p-4 rounded-xl border border-purple-200">
+              <h3 className="font-bold text-purple-700 mb-2 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-purple-200 flex items-center justify-center">
+                  <span className="text-purple-700">2</span>
+                </div>
+                Mencintai dan Menghormati
+              </h3>
+              <p className="text-purple-800">
+                Mencintai dan menghormati semua nabi dan rasul tanpa membeda-bedakan.
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-4 rounded-xl border border-green-200">
+              <h3 className="font-bold text-green-700 mb-2 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-green-200 flex items-center justify-center">
+                  <span className="text-green-700">3</span>
+                </div>
+                Mempelajari Kisah Mereka
+              </h3>
+              <p className="text-green-800">
+                Mempelajari dan mengambil pelajaran dari kisah-kisah para nabi dan rasul.
+              </p>
+            </div>
+
+            <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
+              <h3 className="font-bold text-yellow-700 mb-2 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-full bg-yellow-200 flex items-center justify-center">
+                  <span className="text-yellow-700">4</span>
+                </div>
+                Mengikuti Teladan Mereka
+              </h3>
+              <p className="text-yellow-800">
+                Mencontoh dan mengamalkan sifat-sifat terpuji para nabi dan rasul.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-orange-50 p-4 rounded-xl border border-orange-200 mt-4">
+            <p className="text-orange-800">
+              <span className="font-bold">Ingat:</span> Beriman kepada nabi dan rasul bukan hanya sekedar percaya, tapi juga harus mengikuti ajaran dan teladan mereka dalam kehidupan sehari-hari.
+            </p>
+          </div>
+        </div>
+      ),
+      icon: <Heart className="w-6 h-6" />,
+      color: "bg-red-100 text-red-600",
+    },
+    {
+      id: "tujuan",
+      title: "Tujuan Diutusnya Nabi dan Rasul",
+      content: (
+        <div className="space-y-4">
+          <p>
+            Allah SWT mengutus para nabi dan rasul dengan tujuan-tujuan mulia untuk kebaikan manusia:
+          </p>
+          <div className="grid grid-cols-1 gap-4">
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-xl border border-blue-200">
+              <h3 className="font-bold text-blue-700 mb-2">1. Mengajarkan Tauhid</h3>
+              <p className="text-blue-800">
+                Mengajak manusia untuk menyembah Allah SWT dan tidak menyekutukan-Nya dengan apapun.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-xl border border-purple-200">
+              <h3 className="font-bold text-purple-700 mb-2">2. Membimbing ke Jalan yang Benar</h3>
+              <p className="text-purple-800">
+                Menunjukkan manusia jalan kebenaran dan membimbing mereka menuju kebahagiaan dunia dan akhirat.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-pink-50 to-red-50 p-4 rounded-xl border border-pink-200">
+              <h3 className="font-bold text-pink-700 mb-2">3. Menyampaikan Hukum Allah</h3>
+              <p className="text-pink-800">
+                Menyampaikan perintah dan larangan Allah serta mengajarkan halal dan haram.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-xl border border-red-200">
+              <h3 className="font-bold text-red-700 mb-2">4. Memberi Teladan</h3>
+              <p className="text-red-800">
+                Memberikan contoh nyata bagaimana menjalani kehidupan sesuai dengan ajaran Allah.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-4 rounded-xl border border-orange-200">
+              <h3 className="font-bold text-orange-700 mb-2">5. Memperingatkan Manusia</h3>
+              <p className="text-orange-800">
+                Memberi kabar gembira bagi orang yang berbuat baik dan peringatan bagi yang berbuat buruk.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-green-50 p-4 rounded-xl border border-green-200 mt-4">
+            <p className="text-green-800">
+              <span className="font-bold">Hikmah:</span> Diutusnya para nabi dan rasul adalah bentuk kasih sayang Allah kepada manusia agar mereka tidak tersesat dan dapat mencapai kebahagiaan di dunia dan akhirat.
+            </p>
+          </div>
+        </div>
+      ),
+      icon: <Target className="w-6 h-6" />,
+      color: "bg-orange-100 text-orange-600",
     },
     {
       id: "perbedaan",
@@ -325,9 +448,8 @@ export default function PengertianPage() {
                   <h2 className="text-xl md:text-2xl font-bold text-gray-800">{section.title}</h2>
                 </div>
                 <div
-                  className={`w-6 h-6 border-2 border-blue-500 rounded-full flex items-center justify-center transition-transform ${
-                    activeSection === section.id ? "rotate-180" : ""
-                  }`}
+                  className={`w-6 h-6 border-2 border-blue-500 rounded-full flex items-center justify-center transition-transform ${activeSection === section.id ? "rotate-180" : ""
+                    }`}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -347,9 +469,8 @@ export default function PengertianPage() {
               </button>
 
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  activeSection === section.id ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${activeSection === section.id ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                  }`}
               >
                 <div className="p-6 pt-0 border-t border-gray-100">{section.content}</div>
               </div>

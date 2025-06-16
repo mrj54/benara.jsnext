@@ -4,199 +4,135 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import { Home, ArrowLeft } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
+
+const prophets = [
+  {
+    name: "NABI AYYUB A.S",
+    subtitle: "Kisah Kesabaran",
+    image: "/images/kisah-ayyub.jpg",
+    link: "/materi/kisah-inspirasi/ayyub",
+    bgColor: "bg-white",
+    bookColor: "bg-green-500"
+  },
+  {
+    name: "NABI HARUN A.S",
+    subtitle: "Kisah Persaudaraan",
+    image: "/images/kisah-harun.jpg",
+    link: "/materi/kisah-inspirasi/harun",
+    bgColor: "bg-[#E8FFF1]",
+    bookColor: "bg-blue-500"
+  },
+  {
+    name: "NABI MUSA A.S",
+    subtitle: "Kisah Keberanian",
+    image: "/images/kisah-musa.jpg",
+    link: "/materi/kisah-inspirasi/musa",
+    bgColor: "bg-[#FFF8E7]",
+    bookColor: "bg-orange-500"
+  },
+  {
+    name: "NABI SULAIMAN A.S",
+    subtitle: "Kebijaksanaan",
+    image: "/images/kisah-sulaiman.jpg",
+    link: "/materi/kisah-inspirasi/sulaiman",
+    bgColor: "bg-[#FFE8F7]",
+    bookColor: "bg-red-500"
+  }
+]
 
 export default function KisahInspirasiPage() {
-  const [userData, setUserData] = useState({
-    nama: "",
-    sekolah: "",
-  })
+  const [userData, setUserData] = useState({ nama: "", sekolah: "" })
   const router = useRouter()
 
   useEffect(() => {
-    // Check if user is logged in
     const nama = localStorage.getItem("nama")
     const sekolah = localStorage.getItem("sekolah")
-
     if (!nama || !sekolah) {
       router.push("/")
       return
     }
-
     setUserData({ nama, sekolah })
   }, [router])
 
-  const stories = [
-    {
-      id: "ayyub",
-      title: "NABI AYYUB A.S",
-      image: "/images/kisah-ayyub.jpg",
-      gradient: "from-blue-50 to-blue-100",
-      hoverGradient: "hover:from-blue-100 hover:to-blue-200",
-      emoji: "📗",
-      desc: "Kisah Kesabaran",
-      link: "/materi/kisah-inspirasi/ayyub",
-    },
-    {
-      id: "harun",
-      title: "NABI HARUN A.S",
-      image: "/images/kisah-harun.jpg",
-      gradient: "from-emerald-50 to-emerald-100",
-      hoverGradient: "hover:from-emerald-100 hover:to-emerald-200",
-      emoji: "📘",
-      desc: "Kisah Persaudaraan",
-      link: "/materi/kisah-inspirasi/harun",
-    },
-    {
-      id: "musa",
-      title: "NABI MUSA A.S",
-      image: "/images/kisah-musa.jpg",
-      gradient: "from-amber-50 to-amber-100",
-      hoverGradient: "hover:from-amber-100 hover:to-amber-200",
-      emoji: "📙",
-      desc: "Kisah Keberanian",
-      link: "/materi/kisah-inspirasi/musa",
-    },
-    {
-      id: "sulaiman",
-      title: "NABI SULAIMAN A.S",
-      image: "/images/kisah-sulaiman.jpg",
-      gradient: "from-violet-50 to-violet-100",
-      hoverGradient: "hover:from-violet-100 hover:to-violet-200",
-      emoji: "📕",
-      desc: "Kebijaksanaan",
-      link: "/materi/kisah-inspirasi/sulaiman",
-    },
-    {
-      id: "ibrahim",
-      title: "NABI IBRAHIM A.S",
-      image: "/images/kisah-ibrahim.jpg",
-      gradient: "from-rose-50 to-rose-100",
-      hoverGradient: "hover:from-rose-100 hover:to-rose-200",
-      emoji: "📚",
-      desc: "Kisah Keimanan",
-      link: "/materi/kisah-inspirasi/ibrahim",
-    },
-    {
-      id: "yusuf",
-      title: "NABI YUSUF A.S",
-      image: "/images/kisah-yusuf.jpg",
-      gradient: "from-cyan-50 to-cyan-100",
-      hoverGradient: "hover:from-cyan-100 hover:to-cyan-200",
-      emoji: "📔",
-      desc: "Kisah Kesabaran",
-      link: "/materi/kisah-inspirasi/yusuf",
-    },
-    {
-      id: "yunus",
-      title: "NABI YUNUS A.S",
-      image: "/images/kisah-yunus.jpg",
-      gradient: "from-indigo-50 to-indigo-100",
-      hoverGradient: "hover:from-indigo-100 hover:to-indigo-200",
-      emoji: "📘",
-      desc: "Kisah Pertobatan",
-      link: "/materi/kisah-inspirasi/yunus",
-    },
-    {
-      id: "daud",
-      title: "NABI DAUD A.S",
-      image: "/images/kisah-daud.jpg",
-      gradient: "from-teal-50 to-teal-100",
-      hoverGradient: "hover:from-teal-100 hover:to-teal-200",
-      emoji: "📗",
-      desc: "Kisah Kepemimpinan",
-      link: "/materi/kisah-inspirasi/daud",
-    },
-  ]
-
   return (
-    <div className="gradient-bg min-h-screen flex flex-col font-['Quicksand',sans-serif]">
-      <div className="screen-container p-3 md:p-6">
-        {/* Back button */}
-        <div className="mb-4">
+    <div className="min-h-screen bg-gradient-to-b from-[#E8F3FF] to-[#F5F9FF]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
+        {/* Back Button - Only visible on desktop */}
+        <div className="hidden md:block mb-6">
           <Link
             href="/page"
-            className="inline-flex items-center gap-2 bg-white/80 hover:bg-white transition-colors px-4 py-2 rounded-full text-blue-600 shadow-md"
+            className="inline-flex items-center gap-2 px-4 py-2 text-[#1E3A8A] hover:text-blue-600 transition-colors"
           >
-            <ArrowLeft size={18} />
+            <ArrowLeft className="w-5 h-5" />
             <span>Kembali</span>
           </Link>
         </div>
 
-        {/* Header Section */}
-        <div className="text-center mb-2 md:mb-6 flex-none">
-          <div className="inline-block">
-            <div className="bg-white rounded-2xl p-2 md:p-4 shadow-xl floating-animation">
-              <div className="relative mobile-logo w-12 h-12 md:w-20 md:h-20 mx-auto">
-                <Image
-                  src="/images/benara-logo.svg"
-                  alt="Benara Kids Logo"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 48px, 80px"
-                />
-              </div>
-            </div>
+        {/* Content Container */}
+        <div className="max-w-6xl mx-auto">
+          {/* Logo */}
+          <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-6 bg-white rounded-3xl shadow-md flex items-center justify-center">
+            <Image
+              src="/images/benara-logo.png"
+              alt="Benara Kids Logo"
+              width={48}
+              height={48}
+              className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
+            />
           </div>
-          <h1 className="mobile-header text-xl md:text-4xl font-bold text-blue-900 mt-2 mb-1">
-            ⭐ Kisah Nabi untuk Anak Sholeh ⭐
-          </h1>
-          <p className="mobile-subheader text-sm md:text-lg text-blue-700 font-medium">
-            Mari Belajar dari Kisah Para Nabi
-          </p>
-        </div>
 
-        {/* Stories Grid */}
-        <div className="flex-grow flex items-center justify-center px-2 md:px-4 py-4">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4 w-full max-w-6xl mx-auto">
-            {stories.map((story, index) => (
-              <div
-                key={story.id}
-                className="opacity-0 transform translate-y-8 animate-fadeInUp"
-                style={{ animationDelay: `${index * 100}ms` }}
+          {/* Title */}
+          <div className="text-center mb-8 md:mb-12">
+            <h1 className="text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#1E3A8A] mb-2 flex items-center justify-center gap-2">
+              <span className="text-xl sm:text-2xl">⭐</span>
+              Kisah Nabi untuk Anak Sholeh
+              <span className="text-xl sm:text-2xl">⭐</span>
+            </h1>
+            <p className="text-base sm:text-lg text-[#1E3A8A]">
+              Mari Belajar dari Kisah Para Nabi
+            </p>
+          </div>
+
+          {/* Prophet Cards Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-6xl mx-auto">
+            {prophets.map((prophet) => (
+              <Link
+                key={prophet.name}
+                href={prophet.link}
+                className={`block p-3 sm:p-4 rounded-3xl shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02] ${prophet.bgColor}`}
               >
-                <Link
-                  href={story.link}
-                  className={`card-hover w-full bg-gradient-to-br ${story.gradient} ${story.hoverGradient} 
-                             rounded-xl md:rounded-2xl p-3 md:p-4 flex flex-col items-center gap-2 md:gap-3 shadow-lg`}
-                >
-                  <div className="relative group">
-                    <div
-                      className="absolute inset-0 bg-white rounded-lg md:rounded-xl transform rotate-6 opacity-0 
-                                  group-hover:opacity-100 transition-all duration-300"
-                    ></div>
-                    <div className="mobile-card-image relative w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-lg md:rounded-xl overflow-hidden z-10">
-                      <Image
-                        src={story.image || "/placeholder.svg"}
-                        alt={story.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 112px"
-                      />
-                    </div>
+                {/* Image */}
+                <div className="relative w-full aspect-square rounded-2xl overflow-hidden mb-3">
+                  <Image
+                    src={prophet.image}
+                    alt={prophet.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 150px, (max-width: 1024px) 200px, 250px"
+                  />
+                </div>
+
+                {/* Text Content */}
+                <div className="text-center">
+                  <h2 className="text-[#1E3A8A] font-bold text-xs sm:text-sm md:text-base mb-1 line-clamp-1">
+                    {prophet.name}
+                  </h2>
+                  <div className="flex justify-center">
+                    <div className={`w-4 sm:w-6 h-1 sm:h-1.5 rounded-full ${prophet.bookColor}`} />
                   </div>
-                  <div className="text-center space-y-1 md:space-y-2">
-                    <h2 className="mobile-card-title text-xs sm:text-sm md:text-lg font-bold text-blue-900 line-clamp-1">
-                      {story.title}
-                    </h2>
-                    <p className="mobile-card-desc text-xs md:text-sm text-blue-700">
-                      <span className="text-sm md:text-lg mr-1">{story.emoji}</span>
-                      <span className="line-clamp-1">{story.desc}</span>
-                    </p>
-                  </div>
-                </Link>
-              </div>
+                  <p className="text-[#1E3A8A] text-xs sm:text-sm mt-1 line-clamp-1">
+                    {prophet.subtitle}
+                  </p>
+                </div>
+              </Link>
             ))}
           </div>
-        </div>
 
-        {/* Home Button */}
-        <div className="flex-none text-center pb-2 md:pb-4 pt-2">
-          <Link href="/page" className="inline-block">
-            <button className="bg-white p-3 md:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group">
-              <Home className="w-6 h-6 md:w-7 md:h-7 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-            </button>
-          </Link>
+          {/* Home Indicator */}
+          <div className="mt-8 md:mt-12 flex justify-center">
+            <div className="w-24 sm:w-32 h-1 bg-gray-300 rounded-full"></div>
+          </div>
         </div>
       </div>
     </div>

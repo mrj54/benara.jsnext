@@ -5,19 +5,17 @@ import { useRouter } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { Search, ArrowLeft, Star, Book, Info } from "lucide-react"
-
 export default function NamaNabiPage() {
   const [userData, setUserData] = useState({
     nama: "",
     sekolah: "",
   })
   const [searchTerm, setSearchTerm] = useState("")
-  const [activeProphet, setActiveProphet] = useState<string | null>(null)
+  const [activeProphet, setActiveProphet] = useState<ProphetName | null>(null)
   const [showTooltip, setShowTooltip] = useState(false)
   const bubbleChatRef = useRef<HTMLDivElement>(null)
   const bubbleTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const router = useRouter()
-  const [activeCategory, setActiveCategory] = useState<string | null>(null)
 
   // Prophet categories for better organization
   const prophetCategories = {
@@ -26,7 +24,11 @@ export default function NamaNabiPage() {
     "Keturunan Ibrahim": ["Ibrahim", "Ismail", "Ishaq", "Yaqub", "Yusuf"],
     "Bani Israil": ["Musa", "Harun", "Daud", "Sulaiman", "Zakaria", "Yahya", "Isa"],
     Lainnya: ["Luth", "Ayyub", "Syu'aib", "Dzulkifli", "Ilyas", "Ilyasa", "Yunus"],
-  }
+  } as const
+
+  type CategoryType = keyof typeof prophetCategories | "Semua Nabi"
+  type ProphetName = typeof prophetCategories[keyof typeof prophetCategories][number]
+  const [activeCategory, setActiveCategory] = useState<CategoryType | null>(null)
 
   // All prophet names in a flat array
   const prophetNames = [
@@ -169,7 +171,8 @@ export default function NamaNabiPage() {
 
     // Then filter by category if one is selected
     if (activeCategory && activeCategory !== "Semua Nabi") {
-      return matchesSearch && prophetCategories[activeCategory].includes(name)
+      const category = activeCategory as keyof typeof prophetCategories
+      return matchesSearch && Array.from(prophetCategories[category]).includes(name as ProphetName)
     }
 
     // If no category is selected or "Semua Nabi" is selected, just filter by search
@@ -177,7 +180,7 @@ export default function NamaNabiPage() {
   })
 
   const showProphetDetails = (name: string) => {
-    setActiveProphet(name)
+    setActiveProphet(name as ProphetName)
 
     if (bubbleTimeoutRef.current) {
       clearTimeout(bubbleTimeoutRef.current)
@@ -234,7 +237,7 @@ export default function NamaNabiPage() {
                 <h1 className="text-xl font-bold text-[#3b82f6]">Hello {userData.nama}!</h1>
                 <div className="w-12 h-12 rounded-full border-3 border-[#93c5fd] overflow-hidden transition-transform hover:scale-110 hover:rotate-6">
                   <Image
-                    src="/images/owl-mascot.png"
+                    src="/images/.png"
                     alt="Kid Avatar"
                     width={48}
                     height={48}
@@ -261,16 +264,6 @@ export default function NamaNabiPage() {
           </div>
         </div>
 
-        {/* Progress Bar with decorative elements */}
-        <div className="relative w-full h-4 bg-[#bfdbfe] rounded-full mb-8 overflow-hidden">
-          <div className="w-1/2 h-full bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-full animate-pulse"></div>
-          <div className="absolute -right-2 top-1/2 transform -translate-y-1/2">
-            <div className="w-8 h-8 flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-full shadow-lg">
-              <Star className="text-white" size={16} />
-            </div>
-          </div>
-        </div>
-
         {/* Category indicator */}
         {activeCategory && activeCategory !== "Semua Nabi" && (
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6 flex items-center gap-3">
@@ -294,42 +287,38 @@ export default function NamaNabiPage() {
         <div className="mb-6 overflow-x-auto hide-scrollbar">
           <div className="flex gap-2 pb-2">
             <button
-              className={`px-4 py-2 ${
-                activeCategory === null || activeCategory === "Semua Nabi"
-                  ? "bg-blue-600 text-white"
-                  : "bg-white/70 backdrop-blur-sm text-blue-600"
-              } 
+              className={`px-4 py-2 ${activeCategory === null || activeCategory === "Semua Nabi"
+                ? "bg-blue-600 text-white"
+                : "bg-white/70 backdrop-blur-sm text-blue-600"
+                } 
                 font-semibold rounded-full shadow-md hover:bg-blue-700 hover:text-white transition-colors whitespace-nowrap`}
               onClick={() => setActiveCategory("Semua Nabi")}
             >
               Semua Nabi
             </button>
             <button
-              className={`px-4 py-2 ${
-                activeCategory === "Ulul Azmi" ? "bg-blue-600 text-white" : "bg-white/70 backdrop-blur-sm text-blue-600"
-              } 
+              className={`px-4 py-2 ${activeCategory === "Ulul Azmi" ? "bg-blue-600 text-white" : "bg-white/70 backdrop-blur-sm text-blue-600"
+                } 
                 font-semibold rounded-full shadow-md hover:bg-blue-700 hover:text-white transition-colors whitespace-nowrap`}
               onClick={() => setActiveCategory("Ulul Azmi")}
             >
               Ulul Azmi
             </button>
             <button
-              className={`px-4 py-2 ${
-                activeCategory === "Keturunan Ibrahim"
-                  ? "bg-blue-600 text-white"
-                  : "bg-white/70 backdrop-blur-sm text-blue-600"
-              } 
+              className={`px-4 py-2 ${activeCategory === "Keturunan Ibrahim"
+                ? "bg-blue-600 text-white"
+                : "bg-white/70 backdrop-blur-sm text-blue-600"
+                } 
                 font-semibold rounded-full shadow-md hover:bg-blue-700 hover:text-white transition-colors whitespace-nowrap`}
               onClick={() => setActiveCategory("Keturunan Ibrahim")}
             >
               Keturunan Ibrahim
             </button>
             <button
-              className={`px-4 py-2 ${
-                activeCategory === "Bani Israil"
-                  ? "bg-blue-600 text-white"
-                  : "bg-white/70 backdrop-blur-sm text-blue-600"
-              } 
+              className={`px-4 py-2 ${activeCategory === "Bani Israil"
+                ? "bg-blue-600 text-white"
+                : "bg-white/70 backdrop-blur-sm text-blue-600"
+                } 
                 font-semibold rounded-full shadow-md hover:bg-blue-700 hover:text-white transition-colors whitespace-nowrap`}
               onClick={() => setActiveCategory("Bani Israil")}
             >
@@ -391,25 +380,136 @@ export default function NamaNabiPage() {
 
         {/* Bubble Chat with improved styling */}
         <div
-          className={`fixed bottom-8 left-1/2 -translate-x-1/2 p-5 rounded-3xl transition-all max-w-sm z-50 ${
-            activeProphet
-              ? "opacity-100 -translate-y-2 bg-white shadow-xl border-2 border-blue-200 backdrop-blur-md"
-              : "opacity-0 translate-y-8 pointer-events-none"
-          }`}
+          ref={bubbleChatRef}
+          className={`fixed bottom-4 left-1/2 -translate-x-1/2 transition-all max-w-2xl w-[90%] z-50 ${activeProphet
+            ? "opacity-100 -translate-y-2 bg-white shadow-xl border-2 border-blue-200 backdrop-blur-md rounded-2xl overflow-hidden"
+            : "opacity-0 translate-y-8 pointer-events-none"
+            }`}
         >
           {activeProphet && (
-            <>
-              <div className="flex items-center gap-3 mb-3">
+            <div className="relative p-6">
+              <div className="flex items-start gap-4 mb-4">
                 <div
-                  className={`w-10 h-10 rounded-full bg-gradient-to-br ${prophetColors[activeProphet]} flex items-center justify-center text-white font-bold`}
+                  className={`w-16 h-16 rounded-xl bg-gradient-to-br ${prophetColors[activeProphet]} flex items-center justify-center text-white font-bold text-2xl shrink-0`}
                 >
                   {activeProphet.charAt(0)}
                 </div>
-                <h3 className="font-extrabold text-xl text-blue-800">{activeProphet}</h3>
+                <div>
+                  <h3 className="font-extrabold text-2xl text-blue-800 mb-1">{activeProphet}</h3>
+                  <p className="text-blue-600 font-semibold">{prophetIcons[activeProphet]}</p>
+                </div>
               </div>
-              <p className="text-gray-700 text-base font-medium leading-relaxed">{descriptions[activeProphet]}</p>
+
+              <div className="space-y-4">
+                <p className="text-gray-700 text-base leading-relaxed">{descriptions[activeProphet]}</p>
+
+                {/* Additional Info Box */}
+                <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">
+                  <h4 className="font-bold text-blue-800 mb-2">Tahukah Kamu?</h4>
+                  {activeProphet === "Adam" && (
+                    <p className="text-blue-700">Adam AS adalah manusia dan nabi pertama yang Allah ciptakan. Beliau tinggal di surga sebelum turun ke bumi dan mengajarkan manusia tentang bercocok tanam.</p>
+                  )}
+                  {activeProphet === "Idris" && (
+                    <p className="text-blue-700">Nabi Idris AS adalah orang pertama yang menulis dengan pena. Beliau juga ahli dalam ilmu perbintangan dan matematika!</p>
+                  )}
+                  {activeProphet === "Nuh" && (
+                    <p className="text-blue-700">Nabi Nuh AS berdakwah selama 950 tahun! Beliau membangun kapal besar di atas gunung atas perintah Allah untuk menyelamatkan orang-orang beriman dan hewan dari banjir besar.</p>
+                  )}
+                  {activeProphet === "Hud" && (
+                    <p className="text-blue-700">Nabi Hud AS diutus kepada kaum 'Ad yang memiliki tubuh tinggi dan kuat. Mereka bisa membangun istana-istana megah di antara gunung-gunung!</p>
+                  )}
+                  {activeProphet === "Shaleh" && (
+                    <p className="text-blue-700">Nabi Shaleh AS memiliki mukjizat seekor unta betina yang keluar dari batu besar. Unta itu bisa menghasilkan susu yang cukup untuk seluruh kaumnya!</p>
+                  )}
+                  {activeProphet === "Ibrahim" && (
+                    <p className="text-blue-700">Ibrahim AS dijuluki "Khalilullah" yang artinya kekasih Allah. Beliau selamat dari api yang sangat panas karena Allah memerintahkan api itu menjadi dingin!</p>
+                  )}
+                  {activeProphet === "Luth" && (
+                    <p className="text-blue-700">Nabi Luth AS adalah keponakan Nabi Ibrahim AS. Beliau menyelamatkan orang-orang beriman dari hujan batu yang menghancurkan kota Sodom.</p>
+                  )}
+                  {activeProphet === "Ismail" && (
+                    <p className="text-blue-700">Nabi Ismail AS membantu ayahnya (Ibrahim AS) membangun Ka'bah. Ketika masih kecil, kakinya menghentakkan tanah dan keluarlah mata air Zamzam yang masih ada sampai sekarang!</p>
+                  )}
+                  {activeProphet === "Ishaq" && (
+                    <p className="text-blue-700">Nabi Ishaq AS adalah putra kedua Nabi Ibrahim AS yang lahir saat Ibrahim sudah sangat tua. Beliau menjadi nenek moyang bani Israil.</p>
+                  )}
+                  {activeProphet === "Yaqub" && (
+                    <p className="text-blue-700">Nabi Yaqub AS memiliki nama lain yaitu Israil. Beliau memiliki 12 putra yang kemudian menjadi 12 suku bani Israil yang terkenal!</p>
+                  )}
+                  {activeProphet === "Yusuf" && (
+                    <p className="text-blue-700">Nabi Yusuf AS terkenal dengan ketampanannya dan kemampuan menafsirkan mimpi. Beliau menjadi bendahara kerajaan Mesir dan memaafkan saudara-saudaranya yang dulu memasukkannya ke dalam sumur.</p>
+                  )}
+                  {activeProphet === "Ayyub" && (
+                    <p className="text-blue-700">Nabi Ayyub AS terkenal dengan kesabarannya. Meski kehilangan harta, keluarga, dan menderita sakit selama bertahun-tahun, beliau tetap bersyukur kepada Allah.</p>
+                  )}
+                  {activeProphet === "Syu'aib" && (
+                    <p className="text-blue-700">Nabi Syu'aib AS sering disebut sebagai 'Khatibul Anbiya' (ahli pidato para nabi) karena kemampuan berbicaranya yang sangat baik dalam mengajak kepada kebenaran.</p>
+                  )}
+                  {activeProphet === "Musa" && (
+                    <p className="text-blue-700">Musa AS memiliki mukjizat tongkat yang bisa berubah menjadi ular dan membelah lautan. Beliau adalah satu-satunya nabi yang berbicara langsung dengan Allah!</p>
+                  )}
+                  {activeProphet === "Harun" && (
+                    <p className="text-blue-700">Nabi Harun AS adalah saudara Nabi Musa AS yang membantu dakwahnya. Beliau terkenal dengan tutur katanya yang lembut dan bijaksana.</p>
+                  )}
+                  {activeProphet === "Dzulkifli" && (
+                    <p className="text-blue-700">Nabi Dzulkifli AS terkenal karena selalu menepati janjinya. Beliau tidak pernah tidur di malam hari karena sibuk beribadah dan membantu orang-orang yang membutuhkan.</p>
+                  )}
+                  {activeProphet === "Daud" && (
+                    <p className="text-blue-700">Nabi Daud AS bisa melunakkan besi dengan tangannya! Suaranya sangat merdu saat membaca Zabur, sampai-sampai gunung dan burung-burung ikut bertasbih bersamanya.</p>
+                  )}
+                  {activeProphet === "Sulaiman" && (
+                    <p className="text-blue-700">Nabi Sulaiman AS bisa berbicara dengan hewan dan mengendalikan jin. Beliau memiliki kerajaan yang sangat megah dengan teknologi yang canggih untuk zamannya!</p>
+                  )}
+                  {activeProphet === "Ilyas" && (
+                    <p className="text-blue-700">Nabi Ilyas AS berdakwah kepada kaum yang menyembah berhala bernama Ba'al. Allah memberinya mukjizat bisa mendatangkan atau menahan hujan!</p>
+                  )}
+                  {activeProphet === "Ilyasa" && (
+                    <p className="text-blue-700">Nabi Ilyasa AS adalah murid Nabi Ilyas AS. Beliau memiliki kemampuan menyembuhkan berbagai penyakit atas izin Allah.</p>
+                  )}
+                  {activeProphet === "Yunus" && (
+                    <p className="text-blue-700">Nabi Yunus AS terkenal dengan kisahnya ditelan ikan paus selama 3 hari! Di dalam perut ikan, beliau terus bertasbih kepada Allah hingga akhirnya diselamatkan.</p>
+                  )}
+                  {activeProphet === "Zakaria" && (
+                    <p className="text-blue-700">Nabi Zakaria AS merawat Maryam (ibu Nabi Isa AS) di mihrab. Allah mengabulkan doanya dengan memberinya putra bernama Yahya di usia yang sangat tua.</p>
+                  )}
+                  {activeProphet === "Yahya" && (
+                    <p className="text-blue-700">Nabi Yahya AS mendapat hikmah (kebijaksanaan) sejak masih kecil. Beliau sangat tekun beribadah dan mengajarkan kebaikan kepada orang-orang.</p>
+                  )}
+                  {activeProphet === "Isa" && (
+                    <p className="text-blue-700">Nabi Isa AS bisa berbicara sejak bayi untuk membela ibunya! Beliau bisa menyembuhkan orang buta, penderita kusta, dan menghidupkan orang mati atas izin Allah.</p>
+                  )}
+                  {activeProphet === "Muhammad" && (
+                    <p className="text-blue-700">Nabi Muhammad SAW adalah nabi terakhir dan penutup para nabi. Mukjizat terbesar beliau adalah Al-Qur'an yang masih terjaga keasliannya hingga sekarang. Beliau memiliki akhlak yang sangat mulia sehingga dijuluki "Al-Amin" (yang dapat dipercaya).</p>
+                  )}
+                </div>
+
+                {/* Quick Links */}
+                <div className="flex gap-2 mt-4">
+                  {activeProphet && prophetCategories["Ulul Azmi"].includes(activeProphet as typeof prophetCategories["Ulul Azmi"][number]) && (
+                    <Link
+                      href={`/materi/ulul-azmi/${activeProphet.toLowerCase()}`}
+                      className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full text-sm font-medium hover:from-blue-600 hover:to-blue-700 transition-colors"
+                    >
+                      Baca Kisah Lengkap
+                    </Link>
+                  )}
+                  <button
+                    onClick={() => setActiveProphet(null)}
+                    className="px-4 py-2 bg-gray-100 text-gray-600 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
+
+              {/* Decorative corner */}
+              <div
+                className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl ${prophetColors[activeProphet]} rounded-bl-[100px] opacity-10`}
+              ></div>
+
+              {/* Bottom arrow */}
               <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-r-2 border-b-2 border-blue-200"></div>
-            </>
+            </div>
           )}
         </div>
       </div>

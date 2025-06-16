@@ -173,7 +173,7 @@ export default function BerandaPage() {
     <>
       <nav className="flex justify-between items-center p-4 md:p-8 bg-white shadow-md fixed w-full top-0 z-[1000]">
         <div className="flex items-center gap-2">
-          <Image src="/images/benara-logo.svg" alt="Benara Logo" width={40} height={40} className="w-10 h-10" />
+          <Image src="/images/benara-logo.png" alt="Benara Logo" width={40} height={40} className="w-10 h-10" />
           <span className="text-2xl font-semibold text-[#2B4F60]">Benara.</span>
         </div>
         <div className="hidden md:flex items-center gap-8">
@@ -447,56 +447,123 @@ export default function BerandaPage() {
         </div>
       </nav>
 
-      <main className="mt-20 p-8">
-        <section className="relative flex flex-col md:flex-row items-center justify-between gap-8 mb-12 p-8 max-w-[1200px] mx-auto overflow-hidden">
-          <div className="flex-1 order-2 md:order-1 max-w-[400px]">
+      <main className="mt-32 md:mt-40 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8">
+          <div className="flex flex-col md:flex-row items-center md:items-center">
+            {/* Image */}
+            <div className="w-[280px] md:w-[380px] mb-8 md:mb-0">
+              <Image
+                src="/images/kids-reading.svg"
+                alt="Kids Reading"
+                width={380}
+                height={380}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+
+            {/* Content */}
+            <div className="text-center md:text-left md:ml-16">
+              <h1 className="text-[36px] md:text-[48px] text-[#2B4F60] font-bold leading-[1.2]">
+                Belajar Nabi
+                <br />
+                Dan Rasul
+              </h1>
+              <p className="mt-4 text-[#666666] text-lg max-w-[520px] leading-relaxed mx-auto md:mx-0">
+                BENARA ADALAH WEB YANG DIKEMBANGKAN UNTUK ANAK DAPAT BELAJAR KISAH NABI DAN RASUL SECARA DIGITAL,
+                INTERAKTIF, DAN KIDS FRIENDLY
+              </p>
+              <button
+                onClick={handleStartLearning}
+                className="mt-6 px-7 py-3 bg-[#FFA07A] text-white text-lg rounded-[20px] hover:bg-[#ff8c5a] transition-all"
+              >
+                Mulai Belajar
+              </button>
+            </div>
+          </div>
+
+          {/* Decorative Elements */}
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
             <Image
-              src="/images/kids-reading.svg"
-              alt="Kids Reading"
-              width={400}
-              height={400}
-              className="w-full h-auto"
+              src="/images/icon-1.svg"
+              alt="Decorative Icon 1"
+              width={32}
+              height={32}
+              className="absolute w-[32px] h-auto animate-float moving-icon"
+              style={{
+                top: '10%',
+                left: '10%',
+                animationDelay: '0s',
+              }}
+            />
+            <Image
+              src="/images/icon-2.svg"
+              alt="Decorative Icon 2"
+              width={32}
+              height={32}
+              className="absolute w-[32px] h-auto animate-float moving-icon"
+              style={{
+                top: '20%',
+                left: '30%',
+                animationDelay: '0.3s',
+              }}
+            />
+            <Image
+              src="/images/icon-3.svg"
+              alt="Decorative Icon 3"
+              width={32}
+              height={32}
+              className="absolute w-[32px] h-auto animate-float moving-icon"
+              style={{
+                top: '30%',
+                left: '50%',
+                animationDelay: '0.6s',
+              }}
+            />
+            <Image
+              src="/images/icon-4.svg"
+              alt="Decorative Icon 4"
+              width={32}
+              height={32}
+              className="absolute w-[32px] h-auto animate-float moving-icon"
+              style={{
+                top: '40%',
+                left: '70%',
+                animationDelay: '0.9s',
+              }}
+            />
+            <Image
+              src="/images/icon-5.svg"
+              alt="Decorative Icon 5"
+              width={32}
+              height={32}
+              className="absolute w-[32px] h-auto animate-float moving-icon"
+              style={{
+                top: '50%',
+                left: '90%',
+                animationDelay: '1.2s',
+              }}
             />
           </div>
-          <div className="flex-1 text-center md:text-left order-1 md:order-2">
-            <h1 className="text-4xl md:text-5xl text-[#2B4F60] mb-6 font-bold leading-tight capitalize">
-              Belajar nabi
-              <br />
-              dan rasul
-            </h1>
-            <p className="text-base md:text-lg leading-relaxed text-[#666] max-w-[600px] tracking-wide">
-              BENARA ADALAH WEB YANG DIKEMBANGKAN UNTUK ANAK DAPAT BELAJAR KISAH NABI DAN RASUL SECARA DIGITAL,
-              INTERAKTIF, DAN KIDS FRIENDLY
-            </p>
-            <button
-              onClick={handleStartLearning}
-              className="inline-block py-3 px-6 bg-[#FFA07A] text-white text-xl font-semibold rounded-[25px] mt-6 hover:bg-[#ff8c5a] transition-all hover:-translate-y-1 active:translate-y-0.5"
-            >
-              Mulai Belajar
-            </button>
-          </div>
-
-          <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <Image
-                key={i}
-                src={`/images/icon-${i}.svg`}
-                alt={`Icon ${i}`}
-                width={50}
-                height={50}
-                className="absolute w-[50px] h-auto animate-[move_10s_linear_infinite]"
-                style={{
-                  top: `${10 * i}%`,
-                  left: `${i === 1 ? 10 : i === 2 ? 30 : i === 3 ? 50 : i === 4 ? 70 : 90}%`,
-                }}
-              />
-            ))}
-          </div>
-        </section>
+        </div>
       </main>
 
-      {/* Font Awesome script */}
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" async></script>
+      <style jsx global>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        .moving-icon {
+          transition: all 0.3s ease;
+        }
+      `}</style>
     </>
   )
 }

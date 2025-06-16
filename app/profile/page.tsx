@@ -79,7 +79,7 @@ export default function ProfilePage() {
       case "girl":
         return "/images/avatar-girl.png"
       default:
-        return "/images/owl-mascot.png"
+        return "/images/benara-logo.png"
     }
   }
 
@@ -153,31 +153,28 @@ export default function ProfilePage() {
           {/* Tab Navigation */}
           <div className="flex border-b border-gray-200">
             <button
-              className={`flex-1 py-4 px-4 text-center font-medium transition-colors ${
-                activeTab === "overview"
+              className={`flex-1 py-4 px-4 text-center font-medium transition-colors ${activeTab === "overview"
                   ? "text-blue-600 border-b-2 border-blue-600"
                   : "text-gray-500 hover:text-blue-600"
-              }`}
+                }`}
               onClick={() => setActiveTab("overview")}
             >
               Overview
             </button>
             <button
-              className={`flex-1 py-4 px-4 text-center font-medium transition-colors ${
-                activeTab === "history"
+              className={`flex-1 py-4 px-4 text-center font-medium transition-colors ${activeTab === "history"
                   ? "text-blue-600 border-b-2 border-blue-600"
                   : "text-gray-500 hover:text-blue-600"
-              }`}
+                }`}
               onClick={() => setActiveTab("history")}
             >
               Riwayat Quiz
             </button>
             <button
-              className={`flex-1 py-4 px-4 text-center font-medium transition-colors ${
-                activeTab === "settings"
+              className={`flex-1 py-4 px-4 text-center font-medium transition-colors ${activeTab === "settings"
                   ? "text-blue-600 border-b-2 border-blue-600"
                   : "text-gray-500 hover:text-blue-600"
-              }`}
+                }`}
               onClick={() => setActiveTab("settings")}
             >
               Pengaturan
@@ -329,15 +326,14 @@ export default function ProfilePage() {
                         <div className="p-4 md:flex-1">
                           <div className="flex items-center gap-3 mb-2">
                             <div
-                              className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${
-                                result.score >= 80
+                              className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${result.score >= 80
                                   ? "bg-green-500"
                                   : result.score >= 60
                                     ? "bg-blue-500"
                                     : result.score >= 40
                                       ? "bg-yellow-500"
                                       : "bg-red-500"
-                              }`}
+                                }`}
                             >
                               {Math.floor(result.score / 10)}
                             </div>
@@ -354,15 +350,14 @@ export default function ProfilePage() {
                         </div>
 
                         <div
-                          className={`p-4 md:w-32 text-center ${
-                            result.score >= 80
+                          className={`p-4 md:w-32 text-center ${result.score >= 80
                               ? "bg-green-50 text-green-700"
                               : result.score >= 60
                                 ? "bg-blue-50 text-blue-700"
                                 : result.score >= 40
                                   ? "bg-yellow-50 text-yellow-700"
                                   : "bg-red-50 text-red-700"
-                          }`}
+                            }`}
                         >
                           <div className="text-2xl font-bold">{result.score}</div>
                           <div className="text-sm">Skor</div>
@@ -421,18 +416,16 @@ export default function ProfilePage() {
                   <div className="flex justify-center gap-6">
                     {/* Boy Avatar Option */}
                     <div
-                      className={`cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-                        userData.avatar === "boy" ? "scale-110" : ""
-                      }`}
+                      className={`cursor-pointer transition-all duration-300 transform hover:scale-105 ${userData.avatar === "boy" ? "scale-110" : ""
+                        }`}
                       onClick={() => {
                         localStorage.setItem("avatar", "boy")
                         setUserData({ ...userData, avatar: "boy" })
                       }}
                     >
                       <div
-                        className={`bg-white rounded-full p-2 w-[80px] h-[80px] flex items-center justify-center border-4 ${
-                          userData.avatar === "boy" ? "border-blue-500" : "border-transparent"
-                        }`}
+                        className={`bg-white rounded-full p-2 w-[80px] h-[80px] flex items-center justify-center border-4 ${userData.avatar === "boy" ? "border-blue-500" : "border-transparent"
+                          }`}
                       >
                         <Image
                           src="/images/avatar-boy.png"
@@ -447,18 +440,16 @@ export default function ProfilePage() {
 
                     {/* Girl with Hijab Avatar Option */}
                     <div
-                      className={`cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-                        userData.avatar === "girl" ? "scale-110" : ""
-                      }`}
+                      className={`cursor-pointer transition-all duration-300 transform hover:scale-105 ${userData.avatar === "girl" ? "scale-110" : ""
+                        }`}
                       onClick={() => {
                         localStorage.setItem("avatar", "girl")
                         setUserData({ ...userData, avatar: "girl" })
                       }}
                     >
                       <div
-                        className={`bg-white rounded-full p-2 w-[80px] h-[80px] flex items-center justify-center border-4 ${
-                          userData.avatar === "girl" ? "border-pink-500" : "border-transparent"
-                        }`}
+                        className={`bg-white rounded-full p-2 w-[80px] h-[80px] flex items-center justify-center border-4 ${userData.avatar === "girl" ? "border-pink-500" : "border-transparent"
+                          }`}
                       >
                         <Image
                           src="/images/avatar-girl.png"
