@@ -9,6 +9,7 @@ export default function NamaNabiPage() {
   const [userData, setUserData] = useState({
     nama: "",
     sekolah: "",
+    avatar: "",
   })
   const [searchTerm, setSearchTerm] = useState("")
   const [activeProphet, setActiveProphet] = useState<ProphetName | null>(null)
@@ -156,13 +157,14 @@ export default function NamaNabiPage() {
     // Check if user is logged in
     const nama = localStorage.getItem("nama")
     const sekolah = localStorage.getItem("sekolah")
+    const avatar = localStorage.getItem("avatar") || ""
 
     if (!nama || !sekolah) {
       router.push("/")
       return
     }
 
-    setUserData({ nama, sekolah })
+    setUserData({ nama, sekolah, avatar })
   }, [router])
 
   const filteredProphets = prophetNames.filter((name) => {
@@ -189,6 +191,18 @@ export default function NamaNabiPage() {
     bubbleTimeoutRef.current = setTimeout(() => {
       setActiveProphet(null)
     }, 5000)
+  }
+
+  // Fungsi untuk mendapatkan gambar avatar
+  const getAvatarImage = () => {
+    switch (userData.avatar) {
+      case "boy":
+        return "/images/avatar-boy.png"
+      case "girl":
+        return "/images/avatar-girl.png"
+      default:
+        return "/images/benara-logo.png"
+    }
   }
 
   return (
@@ -237,7 +251,7 @@ export default function NamaNabiPage() {
                 <h1 className="text-xl font-bold text-[#3b82f6]">Hello {userData.nama}!</h1>
                 <div className="w-12 h-12 rounded-full border-3 border-[#93c5fd] overflow-hidden transition-transform hover:scale-110 hover:rotate-6">
                   <Image
-                    src="/images/.png"
+                    src={getAvatarImage()}
                     alt="Kid Avatar"
                     width={48}
                     height={48}
