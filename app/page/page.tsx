@@ -80,13 +80,13 @@ export default function LearningDashboard() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 relative z-[1]">
             {/* Card 1 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#729fb1] to-[#5bc8ac] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[180px]">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
                 <Image
                   src="/images/course-1.jpg"
                   alt="Pengertian Nabi dan Rasul"
-                  width={400}
-                  height={180}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  width={300}
+                  height={140}
+                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -104,13 +104,13 @@ export default function LearningDashboard() {
 
             {/* Card 2 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#80b8a3] to-[#5086c8] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[180px]">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
                 <Image
                   src="/images/course-2.jpg"
                   alt="Nama-nama Nabi dan Rasul"
-                  width={400}
-                  height={180}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  width={300}
+                  height={140}
+                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -128,13 +128,13 @@ export default function LearningDashboard() {
 
             {/* Card 3 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#9c94e0] to-[#d096e0] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[180px]">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
                 <Image
                   src="/images/course-3.jpg"
                   alt="Sifat-sifat Nabi dan Rasul"
-                  width={400}
-                  height={180}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  width={300}
+                  height={140}
+                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -155,13 +155,13 @@ export default function LearningDashboard() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-[1] mb-6">
             {/* Card 4 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#699bab] to-[#c8b350] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[180px]">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
                 <Image
                   src="/images/course-4.jpg"
                   alt="Kisah Rasul Ulul Azmi"
-                  width={400}
-                  height={180}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  width={300}
+                  height={140}
+                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -178,38 +178,14 @@ export default function LearningDashboard() {
             </div>
 
             {/* Card 5 */}
-            <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#5b8585] to-[#7a7ab8] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[180px]">
-                <Image
-                  src="/images/course-5.jpg"
-                  alt="Kisah Inspirasi Nabi"
-                  width={400}
-                  height={180}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
-              <div className="flex flex-col gap-3 mt-auto">
-                <h3 className="text-2xl font-bold text-white mt-auto relative pb-2 after:content-[''] after:absolute after:w-[40px] after:h-[3px] after:bg-[rgba(255,255,255,0.5)] after:bottom-0 after:left-0 after:rounded-[10px]">
-                  Kisah Inspirasi Nabi
-                </h3>
-                <Link
-                  href="/materi/kisah-inspirasi"
-                  className="bg-[rgba(255,255,255,0.25)] border-2 border-[rgba(255,255,255,0.5)] rounded-[20px] py-2 px-4 text-sm font-bold text-white text-center transition-all backdrop-blur-[5px] inline-block mt-2 hover:bg-[rgba(255,255,255,0.4)] hover:-translate-y-[3px] hover:shadow-[0_6px_15px_rgba(0,0,0,0.15)]"
-                >
-                  Ayo Belajar!
-                </Link>
-              </div>
-            </div>
-
-            {/* Card 6 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#658ace] to-[#50b4c8] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[180px]">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
                 <Image
                   src="/images/course-6.jpg"
                   alt="Ayo Berlatih"
-                  width={400}
-                  height={180}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  width={300}
+                  height={140}
+                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">

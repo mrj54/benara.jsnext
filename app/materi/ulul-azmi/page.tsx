@@ -260,26 +260,6 @@ export default function UlulAzmiPage() {
           </div>
         </div>
       </div>
-
-      {/* Bottom Navigation */}
-      <nav className="bottom-navigation fixed bottom-0 left-0 right-0 py-3 md:py-4 z-50 bg-white/10 backdrop-blur-md border-t border-white/20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-3 gap-4 text-white text-center">
-            <Link href="/page" className="flex flex-col items-center justify-center">
-              <Home className="w-5 h-5 md:w-6 md:h-6" />
-              <span className="text-xs mt-1">Home</span>
-            </Link>
-            <Link href="/profile" className="flex flex-col items-center justify-center">
-              <User className="w-5 h-5 md:w-6 md:h-6" />
-              <span className="text-xs mt-1">Profile</span>
-            </Link>
-            <button className="flex flex-col items-center justify-center">
-              <Info className="w-5 h-5 md:w-6 md:h-6" />
-              <span className="text-xs mt-1">Info</span>
-            </button>
-          </div>
-        </div>
-      </nav>
     </div>
   )
 }

@@ -177,7 +177,7 @@ const IbrahimStory = () => {
                         </AnimatePresence>
 
                         <div className="space-y-4 mt-6">
-                            <div className="flex justify-between gap-4">
+                            <div className="flex flex-col md:flex-row justify-between gap-3 md:gap-4">
                                 <button
                                     onClick={() => currentPage > 1 && setCurrentPage(prev => prev - 1)}
                                     className="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold transform hover:scale-105 transition-transform duration-200 flex items-center justify-center gap-2"
@@ -194,7 +194,7 @@ const IbrahimStory = () => {
                                 </button>
                             </div>
 
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <button
                                     onClick={handleAudioClick}
                                     className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-xl text-lg font-semibold transform hover:scale-105 transition-transform duration-200"
@@ -216,24 +216,15 @@ const IbrahimStory = () => {
                             </div>
 
                             <div className="mt-6">
-                                <h3 className="text-2xl font-bold text-purple-600 mb-4">Mini Games! 🎮</h3>
-                                <div className="grid grid-cols-2 gap-4">
+                                <h3 className="text-xl md:text-2xl font-bold text-purple-600 mb-4">Mini Games! 🎮</h3>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                                     <button
                                         onClick={startMemoryGame}
-                                        className="bg-pink-500 hover:bg-pink-600 text-white p-4 rounded-xl text-lg font-semibold transform hover:scale-105 transition-transform duration-200"
+                                        className="bg-pink-500 hover:bg-pink-600 text-white p-4 rounded-xl text-base md:text-lg font-semibold transform hover:scale-105 transition-transform duration-200"
                                     >
                                         <div className="flex items-center justify-center gap-2">
                                             <span className="text-2xl">🎯</span>
                                             Permainan Memori
-                                        </div>
-                                    </button>
-                                    <button
-                                        onClick={startPuzzle}
-                                        className="bg-indigo-500 hover:bg-indigo-600 text-white p-4 rounded-xl text-lg font-semibold transform hover:scale-105 transition-transform duration-200"
-                                    >
-                                        <div className="flex items-center justify-center gap-2">
-                                            <span className="text-2xl">🧩</span>
-                                            Puzzle Seru
                                         </div>
                                     </button>
                                 </div>

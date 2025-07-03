@@ -227,15 +227,6 @@ const MusaStory = () => {
                                             Permainan Memori
                                         </div>
                                     </button>
-                                    <button
-                                        onClick={startPuzzle}
-                                        className="bg-indigo-500 hover:bg-indigo-600 text-white p-4 rounded-xl text-base md:text-lg font-semibold transform hover:scale-105 transition-transform duration-200"
-                                    >
-                                        <div className="flex items-center justify-center gap-2">
-                                            <span className="text-2xl">🧩</span>
-                                            Puzzle Seru
-                                        </div>
-                                    </button>
                                 </div>
                             </div>
                         </div>

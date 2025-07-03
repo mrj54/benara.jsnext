@@ -38,12 +38,6 @@ export default function BerandaPage() {
       keywords: ["ulul", "azmi", "nuh", "ibrahim", "musa", "isa", "muhammad"],
     },
     {
-      title: "Kisah Inspirasi Nabi",
-      description: "Kisah-kisah inspiratif dari kehidupan para nabi",
-      link: "/materi/kisah-inspirasi",
-      keywords: ["kisah", "inspirasi", "cerita", "hikmah", "teladan"],
-    },
-    {
       title: "Ayo Berlatih!",
       description: "Uji pengetahuanmu tentang para nabi",
       link: "/materi/quiz",
@@ -219,13 +213,6 @@ export default function BerandaPage() {
                   <div className="text-sm text-[#666]">Pelajari 5 nabi dengan keteguhan luar biasa</div>
                 </Link>
                 <Link
-                  href="/materi/kisah-inspirasi"
-                  className="block px-4 py-3 text-[#333] hover:bg-[#f0f9ff] rounded-lg transition-colors"
-                >
-                  <div className="font-medium">Kisah Inspirasi Nabi</div>
-                  <div className="text-sm text-[#666]">Kisah-kisah inspiratif dari kehidupan para nabi</div>
-                </Link>
-                <Link
                   href="/materi/quiz"
                   className="block px-4 py-3 text-[#333] hover:bg-[#f0f9ff] rounded-lg transition-colors"
                 >
@@ -367,12 +354,6 @@ export default function BerandaPage() {
                     className="block py-2 px-3 text-[#333] hover:bg-[#f0f9ff] rounded-lg text-sm"
                   >
                     Nabi Ulul Azmi
-                  </Link>
-                  <Link
-                    href="/materi/kisah-inspirasi"
-                    className="block py-2 px-3 text-[#333] hover:bg-[#f0f9ff] rounded-lg text-sm"
-                  >
-                    Kisah Inspirasi Nabi
                   </Link>
                   <Link
                     href="/materi/quiz"
