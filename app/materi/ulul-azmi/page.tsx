@@ -105,35 +105,35 @@ export default function UlulAzmiPage() {
       id: "nuh",
       name: "Nabi Nuh",
       description: "Pelayaran Besar",
-      image: "/images/nabi-nuh.jpg",
+      image: "/images/nuh.jpg",
       link: "/materi/ulul-azmi/nuh",
     },
     {
       id: "ibrahim",
       name: "Nabi Ibrahim",
       description: "Pencari Kebenaran",
-      image: "/images/nabi-ibrahim.jpg",
+      image: "/images/ibrahim.jpeg",
       link: "/materi/ulul-azmi/ibrahim",
     },
     {
       id: "musa",
       name: "Nabi Musa",
       description: "Tongkat Ajaib",
-      image: "/images/nabi-musa.jpg",
+      image: "/images/musa.jpg",
       link: "/materi/ulul-azmi/musa",
     },
     {
       id: "isa",
       name: "Nabi Isa",
       description: "Penyembuh",
-      image: "/images/nabi-isa.jpg",
+      image: "/images/isa.jpg",
       link: "/materi/ulul-azmi/isa",
     },
     {
       id: "muhammad",
       name: "Nabi Muhammad",
       description: "Teladan Utama",
-      image: "/images/nabi-muhammad.jpg",
+      image: "/images/muhammad.jpeg",
       link: "/materi/ulul-azmi/muhammad",
     },
   ]
@@ -223,18 +223,6 @@ export default function UlulAzmiPage() {
       </div>
 
       <div className="container mx-auto px-4 py-4 flex-grow">
-        <header className="elegant-header text-center mb-8 md:mb-12 p-4 md:p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20">
-          <div className="relative z-10">
-            <h1 className="header-title text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 md:mb-4">BENARA</h1>
-            <h2 className="header-subtitle text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 mb-2 md:mb-3">
-              Nabi Ulul Azmi
-            </h2>
-            <p className="header-description text-white text-base md:text-lg max-w-xl mx-auto">
-              Jelajahi Kisah Inspiratif Para Nabi
-            </p>
-          </div>
-        </header>
-
         <div id="mainContent">
           <div className="adventure-map grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
             {prophetData.map((prophet) => (

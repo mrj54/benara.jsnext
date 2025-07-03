@@ -544,6 +544,19 @@ export default function BerandaPage() {
         .moving-icon {
           transition: all 0.3s ease;
         }
+        .bg-bubble {
+          position: absolute;
+          border-radius: 9999px;
+          background: linear-gradient(135deg, #a5b4fc 0%, #fbc2eb 100%);
+          pointer-events: none;
+          animation-name: bubble-float;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        @keyframes bubble-float {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-120vh); }
+        }
       `}</style>
     </>
   )
