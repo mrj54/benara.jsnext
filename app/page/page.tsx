@@ -80,13 +80,13 @@ export default function LearningDashboard() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 relative z-[1]">
             {/* Card 1 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#729fb1] to-[#5bc8ac] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[200px] w-[200px] mx-auto bg-white flex items-center justify-center p-2">
                 <Image
                   src="/images/course-1.jpg"
                   alt="Pengertian Nabi dan Rasul"
                   width={300}
                   height={140}
-                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
+                  className="w-full h-full object-contain max-w-full max-h-full p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -104,13 +104,13 @@ export default function LearningDashboard() {
 
             {/* Card 2 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#80b8a3] to-[#5086c8] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[200px] w-[200px] mx-auto bg-white flex items-center justify-center p-2">
                 <Image
                   src="/images/course-2.jpg"
                   alt="Nama-nama Nabi dan Rasul"
                   width={300}
                   height={140}
-                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
+                  className="w-full h-full object-contain max-w-full max-h-full p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -128,13 +128,13 @@ export default function LearningDashboard() {
 
             {/* Card 3 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#9c94e0] to-[#d096e0] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[200px] w-[200px] mx-auto bg-white flex items-center justify-center p-2">
                 <Image
                   src="/images/course-3.jpg"
                   alt="Sifat-sifat Nabi dan Rasul"
                   width={300}
                   height={140}
-                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
+                  className="w-full h-full object-contain max-w-full max-h-full p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -155,13 +155,13 @@ export default function LearningDashboard() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-[1] mb-6">
             {/* Card 4 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#699bab] to-[#c8b350] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[200px] w-[200px] mx-auto bg-white flex items-center justify-center p-2">
                 <Image
                   src="/images/course-4.jpg"
                   alt="Kisah Rasul Ulul Azmi"
                   width={300}
                   height={140}
-                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
+                  className="w-full h-full object-contain max-w-full max-h-full p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
@@ -179,13 +179,13 @@ export default function LearningDashboard() {
 
             {/* Card 5 */}
             <div className="rounded-[24px] p-6 cursor-pointer transition-all overflow-hidden relative shadow-[0_8px_20px_rgba(0,0,0,0.1)] h-full flex flex-col bg-gradient-to-br from-[#658ace] to-[#50b4c8] hover:-translate-y-2 hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)]">
-              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[140px] w-[140px] mx-auto bg-white flex items-center justify-center p-4">
+              <div className="overflow-hidden rounded-2xl mb-4 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] h-[200px] w-[200px] mx-auto bg-white flex items-center justify-center p-2">
                 <Image
                   src="/images/course-6.jpg"
                   alt="Ayo Berlatih"
                   width={300}
                   height={140}
-                  className="w-full h-full object-contain p-0 rounded-xl transition-transform duration-500"
+                  className="w-full h-full object-contain max-w-full max-h-full p-0 rounded-xl transition-transform duration-500"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-auto">
