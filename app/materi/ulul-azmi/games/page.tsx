@@ -11,12 +11,6 @@ const games = [
         link: '/materi/ulul-azmi/games/quiz'
     },
     {
-        title: 'Puzzle Game',
-        description: 'Susun gambar para Nabi Ulul Azmi dalam puzzle yang menantang',
-        image: '/images/ulul-azmi/games/puzzle-thumbnail.jpg',
-        link: '/materi/ulul-azmi/games/puzzle'
-    },
-    {
         title: 'Memory Game',
         description: 'Latih ingatanmu dengan mencari pasangan kartu Nabi Ulul Azmi',
         image: '/images/ulul-azmi/games/memory-thumbnail.jpg',

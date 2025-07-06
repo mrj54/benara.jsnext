@@ -15,38 +15,38 @@ const MusaStory = () => {
     const storyPages = {
         1: {
             title: "Bayi dalam Keranjang",
-            mainImage: "/images/ulul-azmi/musa/baby-basket.jpg",
+            mainImage: "/images/sungai.jpg",
             text: "Untuk menyelamatkan bayi Musa dari kekejaman Firaun, ibunya memasukkan Musa ke dalam keranjang dan mengapungkannya di Sungai Nil. Allah mengatur sehingga Musa ditemukan dan dibesarkan di istana Firaun.",
             funFact: "Musa kecil diasuh oleh ibu kandungnya sendiri di istana Firaun!",
-            funFactImage: "/images/ulul-azmi/musa/palace-life.jpg"
+            funFactImage: "/images/ibu.jpg"
         },
         2: {
             title: "Mendapat Wahyu",
-            mainImage: "/images/ulul-azmi/musa/revelation.jpg",
+            mainImage: "/images/gn4.jpg",
             text: "Allah berbicara langsung kepada Nabi Musa di Bukit Sinai. Di sana beliau menerima wahyu dan perintah untuk mengajak Firaun dan kaumnya menyembah Allah.",
             funFact: "Nabi Musa adalah satu-satunya nabi yang berbicara langsung dengan Allah!",
-            funFactImage: "/images/ulul-azmi/musa/mount-sinai.jpg"
+            funFactImage: "/images/gn3.jpg"
         },
         3: {
             title: "Mukjizat Tongkat",
-            mainImage: "/images/ulul-azmi/musa/staff-miracle.jpg",
+            mainImage: "/images/tong .jpg",
             text: "Allah memberi Nabi Musa mukjizat berupa tongkat yang bisa berubah menjadi ular. Mukjizat ini mengalahkan para penyihir Firaun dan membuktikan kekuasaan Allah.",
             funFact: "Tongkat Nabi Musa juga bisa membelah laut dan mengeluarkan air dari batu!",
-            funFactImage: "/images/ulul-azmi/musa/staff-power.jpg"
+            funFactImage: "/images/laut belah.jpg"
         },
         4: {
             title: "Membelah Laut",
-            mainImage: "/images/ulul-azmi/musa/sea-split.jpg",
+            mainImage: "/images/laut belah.jpg",
             text: "Ketika dikejar pasukan Firaun, Allah memerintahkan Nabi Musa untuk memukul laut dengan tongkatnya. Laut terbelah membentuk jalan, dan Bani Israil selamat menyeberang.",
             funFact: "Air laut yang terbelah berdiri seperti dinding yang tinggi di kiri dan kanan!",
-            funFactImage: "/images/ulul-azmi/musa/sea-walls.jpg"
+            funFactImage: "/images/belah.jpg"
         },
         5: {
             title: "Menerima Taurat",
-            mainImage: "/images/ulul-azmi/musa/torah.jpg",
+            mainImage: "/images/gng.jpg",
             text: "Allah memberikan Kitab Taurat kepada Nabi Musa di Bukit Sinai. Taurat berisi petunjuk dan hukum-hukum untuk membimbing Bani Israil.",
             funFact: "Nabi Musa berada di Bukit Sinai selama 40 hari untuk menerima Taurat!",
-            funFactImage: "/images/ulul-azmi/musa/forty-days.jpg"
+            funFactImage: "/images/gn.jpg"
         }
     }
 

@@ -17,38 +17,38 @@ const NuhStory = () => {
   const storyPages = {
     1: {
       title: "Membangun Kapal",
-      mainImage: "/images/ulul-azmi/nuh/building-ark.jpg",
+      mainImage: "/images/kpl.jpg",
       text: "Allah memerintahkan Nabi Nuh untuk membangun sebuah kapal yang sangat besar. Meskipun banyak yang mengejek, Nabi Nuh tetap sabar dan taat pada perintah Allah.",
       funFact: "Nabi Nuh membangun kapal dengan tangannya sendiri dan membutuhkan waktu yang sangat lama!",
-      funFactImage: "/images/ulul-azmi/nuh/nuh-working.jpg"
+      funFactImage: "/images/kpl .jpg"
     },
     2: {
       title: "Hujan Lebat",
-      mainImage: "/images/ulul-azmi/nuh/heavy-rain.jpg",
+      mainImage: "/images/nuh.jpg",
       text: "Kemudian turunlah hujan yang sangat lebat selama berhari-hari. Air mulai naik dan banjir melanda di mana-mana. Nabi Nuh mengajak orang-orang beriman untuk naik ke dalam kapal.",
       funFact: "Nabi Nuh juga membawa berbagai jenis hewan berpasangan ke dalam kapal!",
-      funFactImage: "/images/ulul-azmi/nuh/animals.jpg"
+      funFactImage: "/images/kpllut.jpg"
     },
     3: {
       title: "Berlayar di Air Bah",
-      mainImage: "/images/ulul-azmi/nuh/sailing.jpg",
+      mainImage: "/images/bah.jpg",
       text: "Kapal Nabi Nuh berlayar di atas air bah yang sangat tinggi. Semua yang berada di dalam kapal selamat berkat pertolongan Allah SWT.",
       funFact: "Air bah menutupi seluruh permukaan bumi, bahkan sampai ke puncak gunung tertinggi!",
-      funFactImage: "/images/ulul-azmi/nuh/flood.jpg"
+      funFactImage: "/images/full.jpg"
     },
     4: {
       title: "Air Surut",
-      mainImage: "/images/ulul-azmi/nuh/receding.jpg",
+      mainImage: "/images/aman.jpg",
       text: "Setelah beberapa lama, hujan pun berhenti dan air mulai surut. Kapal Nabi Nuh akhirnya berhenti di atas Gunung Judi.",
       funFact: "Nabi Nuh mengirim burung merpati untuk mencari tahu apakah air sudah surut!",
-      funFactImage: "/images/ulul-azmi/nuh/dove.jpg"
+      funFactImage: "/images/nuh merpati.jpg"
     },
     5: {
       title: "Kehidupan Baru",
-      mainImage: "/images/ulul-azmi/nuh/new-life.jpg",
+      mainImage: "/images/dmi.jpg",
       text: "Setelah air surut sepenuhnya, Nabi Nuh dan pengikutnya turun dari kapal untuk memulai kehidupan baru di bumi yang telah dibersihkan.",
       funFact: "Semua manusia yang ada di bumi saat ini adalah keturunan dari orang-orang yang selamat dalam kapal Nabi Nuh!",
-      funFactImage: "/images/ulul-azmi/nuh/descendants.jpg"
+      funFactImage: "/images/mnsa.jpg"
     }
   }
 

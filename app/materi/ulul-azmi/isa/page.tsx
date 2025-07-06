@@ -17,38 +17,38 @@ const IsaStory = () => {
     const storyPages = {
         1: {
             title: "Kelahiran Istimewa",
-            mainImage: "/images/ulul-azmi/isa/birth.jpg",
+            mainImage: "/images/bayi.jpg",
             text: "Nabi Isa lahir secara ajaib tanpa ayah dari ibunya Maryam. Kelahirannya merupakan mukjizat dari Allah untuk menunjukkan kekuasaan-Nya.",
             funFact: "Nabi Isa bisa berbicara sejak bayi untuk membela ibunya!",
-            funFactImage: "/images/ulul-azmi/isa/baby-isa.jpg"
+            funFactImage: "/images/bicara.jpg"
         },
         2: {
             title: "Mukjizat Menyembuhkan",
-            mainImage: "/images/ulul-azmi/isa/healing.jpg",
+            mainImage: "/images/buta.jpg",
             text: "Allah memberi Nabi Isa mukjizat untuk menyembuhkan orang sakit, termasuk orang buta dan penderita kusta. Semua ini atas izin Allah untuk menunjukkan kebenaran risalahnya.",
             funFact: "Nabi Isa juga bisa menghidupkan orang mati dengan izin Allah!",
-            funFactImage: "/images/ulul-azmi/isa/miracle.jpg"
+            funFactImage: "/images/hiup.jpg"
         },
         3: {
             title: "Hidangan dari Langit",
-            mainImage: "/images/ulul-azmi/isa/maidah.jpg",
+            mainImage: "/images/mkn.jpg",
             text: "Para pengikut Nabi Isa meminta bukti kekuasaan Allah. Allah kemudian menurunkan hidangan dari langit sebagai mukjizat dan rezeki bagi mereka.",
             funFact: "Peristiwa ini diabadikan dalam Al-Quran dalam surat Al-Maidah!",
-            funFactImage: "/images/ulul-azmi/isa/heavenly-food.jpg"
+            funFactImage: "/images/quran.jpeg"
         },
         4: {
             title: "Mengajarkan Injil",
-            mainImage: "/images/ulul-azmi/isa/teaching.jpg",
+            mainImage: "/images/injl.jpg",
             text: "Allah memberikan Kitab Injil kepada Nabi Isa. Beliau mengajarkan kitab ini kepada pengikutnya dan mengajak mereka untuk menyembah Allah Yang Maha Esa.",
             funFact: "Injil yang asli mengajarkan tentang kedatangan Nabi Muhammad SAW!",
-            funFactImage: "/images/ulul-azmi/isa/gospel.jpg"
+            funFactImage: "/images/injl.jpg"
         },
         5: {
             title: "Diselamatkan Allah",
-            mainImage: "/images/ulul-azmi/isa/ascension.jpg",
+            mainImage: "/images/salib.jpg",
             text: "Ketika orang-orang kafir hendak menyakiti Nabi Isa, Allah menyelamatkannya dengan mengangkatnya ke langit. Allah menggantikan Nabi Isa dengan orang lain yang diserupakan dengannya.",
             funFact: "Nabi Isa akan turun kembali ke bumi menjelang hari kiamat!",
-            funFactImage: "/images/ulul-azmi/isa/return.jpg"
+            funFactImage: "/images/kiamat.jpg"
         }
     }
 

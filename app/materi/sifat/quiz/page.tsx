@@ -126,15 +126,7 @@ export default function SifatNabiQuizPage() {
     setGameState("quiz")
   }
 
-  // Show question
-  const showQuestion = () => {
-    // Check if we've reached the end of questions
-    if (currentQuestionIndex >= questions.length) {
-      saveQuizResult(currentScore)
-      setGameState("completion")
-      return
-    }
-  }
+
 
   // Save quiz result to localStorage
   const saveQuizResult = (score: number) => {
@@ -146,7 +138,21 @@ export default function SifatNabiQuizPage() {
     const formattedDate = today.toISOString().split("T")[0]
     const hours = today.getHours()
     const minutes = today.getMinutes()
-    const createdAt = minutes >= 58 ? `${hours === 23 ? 0 : hours + 1}:00` : `${hours}:${minutes + 2}`
+
+    // Calculate time with proper overflow handling
+    let newMinutes = minutes + 2
+    let newHours = hours
+
+    if (newMinutes >= 60) {
+      newMinutes = newMinutes - 60
+      newHours = newHours + 1
+    }
+
+    if (newHours >= 24) {
+      newHours = newHours - 24
+    }
+
+    const createdAt = `${newHours.toString().padStart(2, '0')}:${newMinutes.toString().padStart(2, '0')}`
 
     const newResult = {
       username: userData.nama,
@@ -166,6 +172,10 @@ export default function SifatNabiQuizPage() {
 
   // Check answer
   const checkAnswer = (selectedIndex: number) => {
+    if (currentQuestionIndex >= questions.length) {
+      return
+    }
+
     const question = questions[currentQuestionIndex]
     if (selectedIndex === question.correct) {
       setCurrentScore((prev) => prev + 10)
@@ -188,8 +198,15 @@ export default function SifatNabiQuizPage() {
   // Handle next question
   const handleNextQuestion = () => {
     if (resultData.isCorrect) {
-      setCurrentQuestionIndex((prev) => prev + 1)
-      setGameState("quiz")
+      const nextIndex = currentQuestionIndex + 1
+      if (nextIndex >= questions.length) {
+        // Quiz completed
+        saveQuizResult(currentScore)
+        setGameState("completion")
+      } else {
+        setCurrentQuestionIndex(nextIndex)
+        setGameState("quiz")
+      }
     } else {
       if (lives <= 0) {
         saveQuizResult(currentScore)
@@ -385,7 +402,7 @@ export default function SifatNabiQuizPage() {
               )}
 
               {/* Quiz Area */}
-              {gameState === "quiz" && (
+              {gameState === "quiz" && currentQuestionIndex < questions.length && (
                 <motion.div
                   key="quiz"
                   initial={{ opacity: 0 }}

@@ -17,38 +17,38 @@ const MuhammadStory = () => {
     const storyPages = {
         1: {
             title: "Tahun Gajah",
-            mainImage: "/images/ulul-azmi/muhammad/year-elephant.jpg",
+            mainImage: "/images/gajah.jpg",
             text: "Nabi Muhammad SAW lahir pada tahun gajah, ketika pasukan bergajah hendak menghancurkan Ka'bah. Allah melindungi Ka'bah dengan mengirim burung Ababil yang membawa batu-batu kecil.",
             funFact: "Nabi Muhammad lahir dalam keadaan yatim karena ayahnya sudah wafat sebelum beliau lahir!",
-            funFactImage: "/images/ulul-azmi/muhammad/birth.jpg"
+            funFactImage: "/images/muhamad saw.png"
         },
         2: {
             title: "Al-Amin",
-            mainImage: "/images/ulul-azmi/muhammad/al-amin.jpg",
+            mainImage: "/images/muhamad saw.png",
             text: "Sejak kecil, Nabi Muhammad dikenal sebagai orang yang sangat jujur dan amanah. Beliau diberi gelar Al-Amin yang artinya orang yang dapat dipercaya.",
             funFact: "Bahkan orang-orang yang memusuhi Nabi tetap menitipkan barang berharga mereka kepada beliau!",
-            funFactImage: "/images/ulul-azmi/muhammad/trust.jpg"
+            funFactImage: "/images/muhamad saw.png"
         },
         3: {
             title: "Wahyu Pertama",
-            mainImage: "/images/ulul-azmi/muhammad/first-revelation.jpg",
+            mainImage: "/images/hr.jpg",
             text: "Di Gua Hira, Malaikat Jibril datang membawa wahyu pertama dari Allah. Ayat pertama yang diturunkan adalah 'Iqra' yang artinya 'Bacalah'.",
             funFact: "Nabi Muhammad tidak bisa membaca dan menulis, tapi Allah memerintahkan beliau untuk membaca!",
-            funFactImage: "/images/ulul-azmi/muhammad/hira.jpg"
+            funFactImage: "/images/muhamad saw.png"
         },
         4: {
             title: "Mukjizat Al-Quran",
-            mainImage: "/images/ulul-azmi/muhammad/quran.jpg",
+            mainImage: "/images/quran.jpeg",
             text: "Mukjizat terbesar Nabi Muhammad adalah Al-Quran. Kitab suci ini terjaga kemurniannya hingga hari ini dan menjadi pedoman hidup umat Islam.",
             funFact: "Al-Quran adalah satu-satunya kitab suci yang masih terjaga keasliannya sampai sekarang!",
-            funFactImage: "/images/ulul-azmi/muhammad/preservation.jpg"
+            funFactImage: "/images/muhamad saw.png"
         },
         5: {
             title: "Nabi Terakhir",
-            mainImage: "/images/ulul-azmi/muhammad/last-prophet.jpg",
+            mainImage: "/images/muhamad saw.png",
             text: "Nabi Muhammad adalah nabi dan rasul terakhir. Beliau membawa ajaran Islam yang sempurna dan berlaku untuk seluruh umat manusia hingga hari kiamat.",
             funFact: "Nabi Muhammad adalah satu-satunya nabi yang diutus untuk seluruh umat manusia, tidak hanya untuk kaum tertentu!",
-            funFactImage: "/images/ulul-azmi/muhammad/universal.jpg"
+            funFactImage: "/images/muhamad saw.png"
         }
     }
 
