@@ -126,14 +126,14 @@ export default function UlulAzmiPage() {
       id: "isa",
       name: "Nabi Isa",
       description: "Penyembuh",
-      image: "/images/isa.jpg",
+      image: "/images/buta.jpg",
       link: "/materi/ulul-azmi/isa",
     },
     {
       id: "muhammad",
       name: "Nabi Muhammad",
       description: "Teladan Utama",
-      image: "/images/muhammad.jpeg",
+      image: "/images/muhamad saw.png",
       link: "/materi/ulul-azmi/muhammad",
     },
   ]
