@@ -254,10 +254,16 @@ export default function PengertianPage() {
               Namun, dalam Al-Qur'an hanya disebutkan <span className="font-bold">25 nama nabi dan rasul</span> yang
               wajib kita ketahui.
             </p>
+            <div className="mt-4">
+              <Link href="/materi/nama-nama-nabi" className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full text-center transition-colors">
+                Lihat 25 Nama Nabi & Rasul
+              </Link>
+            </div>
           </div>
 
           <div className="flex justify-center">
-            <button
+            {/* Hapus tombol dengan ikon bintang dan teks 'Lihat 25 Nabi dan Rasul' */}
+            {/* <button
               onClick={() =>
                 showInfoPopup(
                   "25 Nabi dan Rasul",
@@ -268,7 +274,7 @@ export default function PengertianPage() {
             >
               <Star className="w-4 h-4" />
               <span>Lihat 25 Nabi dan Rasul</span>
-            </button>
+            </button> */}
           </div>
         </div>
       ),
@@ -301,7 +307,6 @@ export default function PengertianPage() {
                 Sifat Wajib
               </h3>
               <p className="text-blue-800">Sifat-sifat yang pasti dimiliki oleh para nabi dan rasul.</p>
-              <p className="text-blue-600 text-sm mt-2 italic">Klik untuk melihat detail</p>
             </div>
 
             <div
@@ -320,7 +325,6 @@ export default function PengertianPage() {
                 Sifat Mustahil
               </h3>
               <p className="text-red-800">Sifat-sifat yang tidak mungkin dimiliki oleh para nabi dan rasul.</p>
-              <p className="text-red-600 text-sm mt-2 italic">Klik untuk melihat detail</p>
             </div>
           </div>
 
@@ -329,6 +333,11 @@ export default function PengertianPage() {
               <span className="font-bold">Tahukah kamu?</span> Sifat-sifat para nabi ini bisa kita jadikan contoh dalam
               kehidupan sehari-hari. Misalnya, kita harus selalu jujur seperti sifat Shiddiq para nabi.
             </p>
+            <div className="mt-4">
+              <Link href="/materi/sifat" className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full text-center transition-colors">
+                Lihat Sifat-Sifat Nabi & Rasul
+              </Link>
+            </div>
           </div>
         </div>
       ),
@@ -390,6 +399,48 @@ export default function PengertianPage() {
           </p>
         </header>
 
+        {/* Materi Tambahan Anak-Anak: Apakah Iman Itu? (PINDAH KE ATAS) */}
+        <motion.div
+          variants={item}
+          className="bg-yellow-50 border-2 border-yellow-200 rounded-3xl shadow-lg p-6 my-6"
+        >
+          <h2 className="text-2xl font-bold text-yellow-700 mb-4 flex items-center gap-2">
+            <Star className="w-6 h-6 text-yellow-500" />
+            Anak-Anak, Tahukah Kalian Apakah Iman Itu?
+          </h2>
+          <div className="space-y-4 text-gray-800">
+            <p>
+              Iman <span className="font-semibold">artinya percaya</span>. Misalnya, ada sahabatmu berkata, “Di saku celanaku ada uang sebanyak sepuluh ribu rupiah.” Hatimu membenarkan yang diucapkan sahabatmu. Itu berarti kamu <span className="font-semibold text-blue-700">percaya</span> ada uang dalam saku. Tetapi jika sebelumnya kalian telah melihat uang itu di saku sahabatmu, lalu mendengar ucapan di atas, itu tidak dinamai percaya, tetapi <span className="font-semibold text-green-700">tahu</span>.
+            </p>
+            <p>
+              <span className="font-semibold">Iman kepada rasul-rasul Allah</span> berarti kalian percaya bahwa Allah mengutus rasul-rasul-Nya sebagai teladan dan contoh bagi manusia.
+            </p>
+            <p>
+              Allah mengutus rasul-rasul-Nya sebagai teladan dan contoh bagi manusia dalam menjalani kehidupan. Allah berfirman:
+            </p>
+            <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-xl my-2">
+              <p className="italic text-blue-800 font-semibold mb-2">
+                "Sesungguhnya telah ada pada diri Rasul itu suri teladan yang baik bagimu." <br />
+                <span className="text-sm">(Q.S. al-Ahzāb/33: 21)</span>
+              </p>
+            </div>
+            <p>
+              Anak-Anak, tahukah kalian bahwa Nabi Muhammad saw. juga rasul-rasul lain adalah manusia biasa? Ya, mereka makan, minum, mempunyai keluarga dan anak-anak, juga bekerja. Mengapa kita perlu menjadikan mereka teladan dan idola? Karena mereka memiliki akhlak yang baik. Allah mengangkat mereka menjadi rasul, karena memiliki empat sifat yang baik.
+            </p>
+            <p>
+              Pertanyaan ini pernah diajukan sahabat kepada Rasulullah saw. Pada suatu hari, Rasulullah saw. berkumpul dengan para sahabatnya. Seketika seorang laki-laki hadir dan bertanya, <span className="italic">"Ya Rasulallah, apakah iman itu?"</span>
+            </p>
+            <p>
+              Rasul menjawab, <span className="font-semibold text-blue-700">"Iman itu kamu percaya kepada Allah, malaikat, kitab-kitab yang diturunkan Allah, rasul-rasul yang diutus-Nya, hari kemudian dan takdir-Nya yang baik dan yang buruk."</span>
+            </p>
+            <div className="bg-white/80 border-l-4 border-yellow-400 p-4 rounded-xl">
+              <p className="text-yellow-800 font-medium">
+                Yuk, kita amalkan rukun iman ini dalam kehidupan sehari-hari agar menjadi anak yang beriman dan bertakwa!
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Main content */}
         <motion.div className="space-y-6" variants={container} initial="hidden" animate="show">
           {/* Introduction */}
@@ -426,6 +477,7 @@ export default function PengertianPage() {
                     </span>
                   </p>
                 </div>
+                {/* Hapus link ke materi nama-nama nabi dan sifat */}
               </div>
             </div>
           </motion.div>

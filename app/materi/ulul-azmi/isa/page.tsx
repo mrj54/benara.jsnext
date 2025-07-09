@@ -45,7 +45,7 @@ const IsaStory = () => {
         },
         5: {
             title: "Diselamatkan Allah",
-            mainImage: "/images/salib.jpg",
+            mainImage: "/images/is.jpg",
             text: "Ketika orang-orang kafir hendak menyakiti Nabi Isa, Allah menyelamatkannya dengan mengangkatnya ke langit. Allah menggantikan Nabi Isa dengan orang lain yang diserupakan dengannya.",
             funFact: "Nabi Isa akan turun kembali ke bumi menjelang hari kiamat!",
             funFactImage: "/images/kiamat.jpg"
