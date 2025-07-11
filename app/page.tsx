@@ -53,8 +53,8 @@ export default function WelcomePage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-white p-4">
-      <div className="relative w-full max-w-[1024px] md:aspect-[16/9] flex items-center justify-center py-2 md:py-0">
-        <div className="bg-[#59b3b3] rounded-[32px] w-full max-w-sm relative flex flex-col p-4 shadow-xl
+      <div className="relative w-full max-w-[1024px] md:aspect-[16/9] flex items-center justify-center py-1 md:py-0">
+        <div className="bg-[#59b3b3] rounded-[32px] w-full max-w-sm relative flex flex-col p-2 shadow-xl
                     md:w-[90%] md:h-[85%] md:flex-row md:max-w-none md:p-8">
           <Image
             src="/images/benara-logo.png"
@@ -65,7 +65,7 @@ export default function WelcomePage() {
                    md:w-[120px] md:top-[-40px] md:left-[-20px] md:-translate-x-0"
           />
 
-          <div className="flex-1 flex items-center justify-center mt-4 md:mt-0">
+          <div className="flex-1 flex items-center justify-center mt-2 md:mt-0">
             <Image
               src="/images/students-studying.png"
               alt="Students studying"
@@ -75,21 +75,20 @@ export default function WelcomePage() {
             />
           </div>
 
-          <div className="flex-1 flex flex-col justify-center p-4 md:p-8 md:pl-8">
-            <h1 className="text-[#ebebeb] text-2xl md:text-4xl mb-4 md:mb-8 font-bold text-center md:text-left">Selamat datang</h1>
+          <div className="flex-1 flex flex-col justify-center p-2 md:p-8 md:pl-8">
+            <h1 className="text-[#ebebeb] text-2xl md:text-4xl mb-2 md:mb-8 font-bold text-center md:text-left">Selamat datang</h1>
 
             {step === 1 ? (
               // Step 1: Name and School
               <form onSubmit={handleNextStep} className="w-full">
-                <p className="text-center text-[#dddddd] mb-4 text-sm md:text-base leading-relaxed font-bold md:text-left">
-                  Benara adalah website yang dirancang khusus untuk belajar kisah nabi dan rasul untuk anak. Web ini
-                  berkarakter kids friendly.
+                <p className="text-center text-[#dddddd] mb-2 text-sm md:text-base leading-relaxed font-bold md:text-left">
+                  Benara adalah website yang dirancang khusus untuk belajar kisah nabi dan rasul untuk anak.
                 </p>
 
                 <div className="w-full">
                   <input
                     type="text"
-                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-4"
+                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-2"
                     placeholder="Nama"
                     id="nama"
                     value={formData.nama}
@@ -100,7 +99,7 @@ export default function WelcomePage() {
                 <div className="w-full">
                   <input
                     type="text"
-                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-4"
+                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-2"
                     placeholder="Sekolah"
                     id="sekolah"
                     value={formData.sekolah}
@@ -110,7 +109,7 @@ export default function WelcomePage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-2 md:py-3 px-4 bg-[#7946cc] text-[rgb(245,239,239)] border-none rounded-[24px] text-sm md:text-base cursor-pointer transition-colors duration-300 mt-4 font-bold hover:bg-[#ff8a52]"
+                  className="w-full py-2 md:py-3 px-4 bg-[#7946cc] text-[rgb(245,239,239)] border-none rounded-[24px] text-sm md:text-base cursor-pointer transition-colors duration-300 mt-2 font-bold hover:bg-[#ff8a52]"
                 >
                   Lanjutkan
                 </button>
@@ -118,11 +117,11 @@ export default function WelcomePage() {
             ) : (
               // Step 2: Avatar Selection
               <form onSubmit={handleSubmit} className="w-full">
-                <p className="text-center text-[#dddddd] mb-4 text-sm md:text-base leading-relaxed font-bold md:text-left">
+                <p className="text-center text-[#dddddd] mb-2 text-sm md:text-base leading-relaxed font-bold md:text-left">
                   Pilih avatar yang kamu suka!
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-2 gap-4 mb-4">
                   <button
                     type="button"
                     onClick={() => handleAvatarSelect("boy")}
@@ -159,7 +158,7 @@ export default function WelcomePage() {
 
                 <button
                   type="submit"
-                  className="w-full py-2 md:py-3 px-4 bg-[#7946cc] text-[rgb(245,239,239)] border-none rounded-[24px] text-sm md:text-base cursor-pointer transition-colors duration-300 mt-4 font-bold hover:bg-[#ff8a52]"
+                  className="w-full py-2 md:py-3 px-4 bg-[#7946cc] text-[rgb(245,239,239)] border-none rounded-[24px] text-sm md:text-base cursor-pointer transition-colors duration-300 mt-2 font-bold hover:bg-[#ff8a52]"
                 >
                   Mulai Belajar
                 </button>

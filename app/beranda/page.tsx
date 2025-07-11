@@ -452,7 +452,7 @@ export default function BerandaPage() {
               </h1>
               <p className="mt-4 text-[#666666] text-lg max-w-[520px] leading-relaxed mx-auto md:mx-0">
                 BENARA ADALAH WEB YANG DIKEMBANGKAN UNTUK ANAK DAPAT BELAJAR KISAH NABI DAN RASUL SECARA DIGITAL,
-                INTERAKTIF, DAN KIDS FRIENDLY
+                INTERAKTIF.
               </p>
               <button
                 onClick={handleStartLearning}
