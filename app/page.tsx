@@ -53,7 +53,7 @@ export default function WelcomePage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-white p-4">
-      <div className="relative w-full max-w-[1024px] md:aspect-[16/9] flex items-center justify-center py-8 md:py-0">
+      <div className="relative w-full max-w-[1024px] md:aspect-[16/9] flex items-center justify-center py-2 md:py-0">
         <div className="bg-[#59b3b3] rounded-[32px] w-full max-w-sm relative flex flex-col p-4 shadow-xl
                     md:w-[90%] md:h-[85%] md:flex-row md:max-w-none md:p-8">
           <Image
@@ -65,7 +65,7 @@ export default function WelcomePage() {
                    md:w-[120px] md:top-[-40px] md:left-[-20px] md:-translate-x-0"
           />
 
-          <div className="flex-1 flex items-center justify-center mt-16 md:mt-0">
+          <div className="flex-1 flex items-center justify-center mt-4 md:mt-0">
             <Image
               src="/images/students-studying.png"
               alt="Students studying"
