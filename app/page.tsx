@@ -53,8 +53,8 @@ export default function WelcomePage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-white p-4">
-      <div className="relative w-full max-w-[1024px] md:aspect-[16/9] flex items-center justify-center py-1 md:py-0">
-        <div className="bg-[#59b3b3] rounded-[32px] w-full max-w-sm relative flex flex-col p-2 shadow-xl
+      <div className="relative w-full max-w-[1024px] md:aspect-[16/9] flex items-center justify-center py-4 md:py-0">
+        <div className="bg-[#59b3b3] rounded-[32px] w-full max-w-sm relative flex flex-col p-4 shadow-xl
                     md:w-[90%] md:h-[85%] md:flex-row md:max-w-none md:p-8">
           <Image
             src="/images/benara-logo.png"
@@ -62,7 +62,7 @@ export default function WelcomePage() {
             width={120}
             height={120}
             className="absolute w-[80px] h-auto top-[-40px] left-1/2 -translate-x-1/2 z-[2] animate-bounce
-                   md:w-[120px] md:top-[-40px] md:left-[-20px] md:-translate-x-0"
+                   md:w-[120px] md:top-[-40px] md:left-[-20px] md:-translate-x-0 mt-6 md:mt-0"
           />
 
           <div className="flex-1 flex items-center justify-center mt-2 md:mt-0">
@@ -81,14 +81,14 @@ export default function WelcomePage() {
             {step === 1 ? (
               // Step 1: Name and School
               <form onSubmit={handleNextStep} className="w-full">
-                <p className="text-center text-[#dddddd] mb-2 text-sm md:text-base leading-relaxed font-bold md:text-left">
+                <p className="text-center text-[#dddddd] mb-4 text-sm md:text-base leading-relaxed font-bold md:text-left">
                   Benara adalah website yang dirancang khusus untuk belajar kisah nabi dan rasul untuk anak.
                 </p>
 
                 <div className="w-full">
                   <input
                     type="text"
-                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-2"
+                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-4"
                     placeholder="Nama"
                     id="nama"
                     value={formData.nama}
@@ -99,7 +99,7 @@ export default function WelcomePage() {
                 <div className="w-full">
                   <input
                     type="text"
-                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-2"
+                    className="w-full py-2 md:py-3 px-4 border-none rounded-[24px] text-sm md:text-base bg-white mb-4"
                     placeholder="Sekolah"
                     id="sekolah"
                     value={formData.sekolah}
