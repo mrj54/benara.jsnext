@@ -23,29 +23,29 @@ const MusaStory = () => {
         2: {
             title: "Mendapat Wahyu",
             mainImage: "/images/gn4.jpg",
-            text: "Allah berbicara langsung kepada Nabi Musa di Bukit Sinai. Di sana beliau menerima wahyu dan perintah untuk mengajak Firaun dan kaumnya menyembah Allah.",
-            funFact: "Nabi Musa adalah satu-satunya nabi yang berbicara langsung dengan Allah!",
+            text: "Allah berbicara langsung kepada Nabi Musa a.s. di Bukit Sinai. Di sana beliau menerima wahyu dan perintah untuk mengajak Firaun dan kaumnya menyembah Allah.",
+            funFact: "Nabi Musa a.s. adalah satu-satunya nabi yang berbicara langsung dengan Allah!",
             funFactImage: "/images/gn3.jpg"
         },
         3: {
             title: "Mukjizat Tongkat",
             mainImage: "/images/tong .jpg",
-            text: "Allah memberi Nabi Musa mukjizat berupa tongkat yang bisa berubah menjadi ular. Mukjizat ini mengalahkan para penyihir Firaun dan membuktikan kekuasaan Allah.",
-            funFact: "Tongkat Nabi Musa juga bisa membelah laut dan mengeluarkan air dari batu!",
+            text: "Allah memberi Nabi Musa a.s. mukjizat berupa tongkat yang bisa berubah menjadi ular. Mukjizat ini mengalahkan para penyihir Firaun dan membuktikan kekuasaan Allah.",
+            funFact: "Tongkat Nabi Musa a.s. juga bisa membelah laut dan mengeluarkan air dari batu!",
             funFactImage: "/images/laut belah.jpg"
         },
         4: {
             title: "Membelah Laut",
             mainImage: "/images/laut belah.jpg",
-            text: "Ketika dikejar pasukan Firaun, Allah memerintahkan Nabi Musa untuk memukul laut dengan tongkatnya. Laut terbelah membentuk jalan, dan Bani Israil selamat menyeberang.",
+            text: "Ketika dikejar pasukan Firaun, Allah memerintahkan Nabi Musa a.s. untuk memukul laut dengan tongkatnya. Laut terbelah membentuk jalan, dan Bani Israil selamat menyeberang.",
             funFact: "Air laut yang terbelah berdiri seperti dinding yang tinggi di kiri dan kanan!",
             funFactImage: "/images/belah.jpg"
         },
         5: {
             title: "Menerima Taurat",
             mainImage: "/images/gng.jpg",
-            text: "Allah memberikan Kitab Taurat kepada Nabi Musa di Bukit Sinai. Taurat berisi petunjuk dan hukum-hukum untuk membimbing Bani Israil.",
-            funFact: "Nabi Musa berada di Bukit Sinai selama 40 hari untuk menerima Taurat!",
+            text: "Allah memberikan Kitab Taurat kepada Nabi Musa a.s. di Bukit Sinai. Taurat berisi petunjuk dan hukum-hukum untuk membimbing Bani Israil.",
+            funFact: "Nabi Musa a.s. berada di Bukit Sinai selama 40 hari untuk menerima Taurat!",
             funFactImage: "/images/gn.jpg"
         }
     }

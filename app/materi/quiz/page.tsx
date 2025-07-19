@@ -53,9 +53,9 @@ export default function QuizPage() {
     },
     {
       question: "Siapakah nabi terakhir?",
-      options: ["Muhammad SAW", "Isa AS", "Yusuf AS", "Ibrahim AS"],
+      options: ["Muhammad saw.", "Isa AS", "Yusuf AS", "Ibrahim AS"],
       correct: 0,
-      fact: "Muhammad SAW adalah utusan terakhir Allah!",
+      fact: "Muhammad saw. adalah utusan terakhir Allah!",
     },
     {
       question: "Nabi yang terkenal dengan kesabarannya menghadapi penyakit adalah...",

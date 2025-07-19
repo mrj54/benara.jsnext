@@ -43,7 +43,7 @@ export default function LearningDashboard() {
               height={48}
               className="w-12 h-12 filter drop-shadow-md transition-all hover:rotate-[10deg]"
             />
-            <span className="text-2xl font-extrabold text-[#5b8585] drop-shadow-md">Benara.</span>
+            <span className="text-2xl font-extrabold text-[#5b8585] drop-shadow-md">Benara</span>
           </div>
           <div className="flex items-center gap-3 z-50">
             <div className="hidden md:block text-base font-semibold text-[#555]">Halo, {userData.nama}</div>
@@ -71,7 +71,7 @@ export default function LearningDashboard() {
               </h1>
             </div>
             <p className="text-[#555] max-w-[500px] text-lg leading-relaxed mt-5">
-              Pelajari tentang kehidupan, sifat, dan kisah inspiratif para nabi yang dapat menjadi teladan dalam
+              Pelajari tentang kehidupan, sifat, dan kisah inspiratif para nabi dan rasul allah yang dapat menjadi teladan dalam
               kehidupan kita sehari-hari.
             </p>
           </div>

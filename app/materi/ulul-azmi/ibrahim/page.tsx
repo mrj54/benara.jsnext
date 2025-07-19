@@ -16,35 +16,35 @@ const IbrahimStory = () => {
         1: {
             title: "Mencari Kebenaran",
             mainImage: "/images/musa kcil.jpg",
-            text: "Nabi Ibrahim AS sejak kecil selalu mencari kebenaran. Beliau mengamati bintang, bulan, dan matahari, hingga akhirnya menemukan kebenaran bahwa Allah adalah satu-satunya Tuhan yang patut disembah.",
-            funFact: "Nabi Ibrahim dikenal sebagai Bapak Para Nabi karena banyak nabi yang merupakan keturunan beliau!",
+            text: "Nabi Ibrahim a.s. sejak kecil selalu mencari kebenaran. Beliau mengamati bintang, bulan, dan matahari, hingga akhirnya menemukan kebenaran bahwa Allah adalah satu-satunya Tuhan yang patut disembah.",
+            funFact: "Nabi Ibrahim a.s. dikenal sebagai Bapak Para Nabi karena banyak nabi yang merupakan keturunan beliau!",
             funFactImage: "/images/bp.jpg"
         },
         2: {
             title: "Menghancurkan Berhala",
             mainImage: "/images/ptngg.jpg",
-            text: "Untuk menunjukkan kebodohan penyembahan berhala, Nabi Ibrahim menghancurkan semua berhala kecuali yang terbesar. Ketika ditanya, beliau menyuruh mereka bertanya pada berhala besar yang tidak bisa berbicara.",
-            funFact: "Nabi Ibrahim meninggalkan kapak di leher berhala terbesar sebagai bukti!",
+            text: "Untuk menunjukkan kebodohan penyembahan berhala, Nabi Ibrahim a.s. menghancurkan semua berhala kecuali yang terbesar. Ketika ditanya, beliau menyuruh mereka bertanya pada berhala besar yang tidak bisa berbicara.",
+            funFact: "Nabi Ibrahim a.s. meninggalkan kapak di leher berhala terbesar sebagai bukti!",
             funFactImage: "/images/kpk.jpg"
         },
         3: {
             title: "Dibakar Api",
             mainImage: "/images/apii.jpeg",
-            text: "Karena menghancurkan berhala, Raja Namrud menghukum Nabi Ibrahim dengan melemparkannya ke dalam api. Namun dengan izin Allah, api menjadi dingin dan tidak membakar Nabi Ibrahim.",
-            funFact: "Allah memerintahkan api untuk menjadi dingin dan memberikan keselamatan kepada Nabi Ibrahim!",
+            text: "Karena menghancurkan berhala, Raja Namrud menghukum Nabi Ibrahim a.s. dengan melemparkannya ke dalam api. Namun dengan izin Allah, api menjadi dingin dan tidak membakar Nabi Ibrahim.",
+            funFact: "Allah memerintahkan api untuk menjadi dingin dan memberikan keselamatan kepada Nabi Ibrahim a.s. !",
             funFactImage: "/images/apiii.jpeg"
         },
         4: {
             title: "Membangun Ka'bah",
             mainImage: "/images/kkbh.jpg",
-            text: "Bersama putranya Ismail, Nabi Ibrahim membangun Ka'bah di Makkah sebagai rumah ibadah pertama yang dibangun untuk menyembah Allah SWT.",
+            text: "Bersama putranya Ismail a.s., Nabi Ibrahim a.s. membangun Ka'bah di Makkah sebagai rumah ibadah pertama yang dibangun untuk menyembah Allah SWT.",
             funFact: "Ka'bah yang kita lihat sekarang masih berdiri di tempat yang sama seperti yang dibangun Nabi Ibrahim!",
             funFactImage: "/images/kkbhh.jpeg"
         },
         5: {
             title: "Ujian Terberat",
             mainImage: "/images/qurban.jpg",
-            text: "Allah menguji keimanan Nabi Ibrahim dengan memerintahkan beliau untuk mengorbankan putranya, Ismail. Ketika keduanya siap melaksanakan perintah Allah, Allah menggantinya dengan seekor domba.",
+            text: "Allah menguji keimanan Nabi Ibrahim a.s. dengan memerintahkan beliau untuk mengorbankan putranya, Ismail a.s.. Ketika keduanya siap melaksanakan perintah Allah, Allah menggantinya dengan seekor domba.",
             funFact: "Peristiwa ini menjadi asal mula ibadah Qurban yang kita lakukan setiap tahun!",
             funFactImage: "/images/qurbann.webp"
         }

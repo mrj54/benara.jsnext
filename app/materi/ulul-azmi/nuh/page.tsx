@@ -18,35 +18,35 @@ const NuhStory = () => {
     1: {
       title: "Membangun Kapal",
       mainImage: "/images/kpl.jpg",
-      text: "Allah memerintahkan Nabi Nuh untuk membangun sebuah kapal yang sangat besar. Meskipun banyak yang mengejek, Nabi Nuh tetap sabar dan taat pada perintah Allah.",
-      funFact: "Nabi Nuh membangun kapal dengan tangannya sendiri dan membutuhkan waktu yang sangat lama!",
+      text: "Allah memerintahkan Nabi Nuh a.s. untuk membangun sebuah kapal yang sangat besar. Meskipun banyak yang mengejek, Nabi Nuh tetap sabar dan taat pada perintah Allah.",
+      funFact: "Nabi Nuh a.s. membangun kapal dengan tangannya sendiri dan membutuhkan waktu yang sangat lama!",
       funFactImage: "/images/kpl .jpg"
     },
     2: {
       title: "Hujan Lebat",
       mainImage: "/images/nuh.jpg",
       text: "Kemudian turunlah hujan yang sangat lebat selama berhari-hari. Air mulai naik dan banjir melanda di mana-mana. Nabi Nuh mengajak orang-orang beriman untuk naik ke dalam kapal.",
-      funFact: "Nabi Nuh juga membawa berbagai jenis hewan berpasangan ke dalam kapal!",
+      funFact: "Nabi Nuh a.s. juga membawa berbagai jenis hewan berpasangan ke dalam kapal!",
       funFactImage: "/images/kpllut.jpg"
     },
     3: {
       title: "Berlayar di Air Bah",
       mainImage: "/images/bah.jpg",
-      text: "Kapal Nabi Nuh berlayar di atas air bah yang sangat tinggi. Semua yang berada di dalam kapal selamat berkat pertolongan Allah SWT.",
+      text: "Kapal Nabi Nuh a.s. berlayar di atas air bah yang sangat tinggi. Semua yang berada di dalam kapal selamat berkat pertolongan Allah SWT.",
       funFact: "Air bah menutupi seluruh permukaan bumi, bahkan sampai ke puncak gunung tertinggi!",
       funFactImage: "/images/full.jpg"
     },
     4: {
       title: "Air Surut",
       mainImage: "/images/aman.jpg",
-      text: "Setelah beberapa lama, hujan pun berhenti dan air mulai surut. Kapal Nabi Nuh akhirnya berhenti di atas Gunung Judi.",
-      funFact: "Nabi Nuh mengirim burung merpati untuk mencari tahu apakah air sudah surut!",
+      text: "Setelah beberapa lama, hujan pun berhenti dan air mulai surut. Kapal Nabi Nuh a.s. akhirnya berhenti di atas Gunung Judi.",
+      funFact: "Nabi Nuh a.s. mengirim burung merpati untuk mencari tahu apakah air sudah surut!",
       funFactImage: "/images/nuh merpati.jpg"
     },
     5: {
       title: "Kehidupan Baru",
       mainImage: "/images/dmi.jpg",
-      text: "Setelah air surut sepenuhnya, Nabi Nuh dan pengikutnya turun dari kapal untuk memulai kehidupan baru di bumi yang telah dibersihkan.",
+      text: "Setelah air surut sepenuhnya, Nabi Nuh a.s. dan pengikutnya turun dari kapal untuk memulai kehidupan baru di bumi yang telah dibersihkan.",
       funFact: "Semua manusia yang ada di bumi saat ini adalah keturunan dari orang-orang yang selamat dalam kapal Nabi Nuh!",
       funFactImage: "/images/mnsa.jpg"
     }

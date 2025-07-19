@@ -51,9 +51,9 @@ export default function PengertianQuizPage() {
     },
     {
       question: "Siapakah nabi dan rasul terakhir?",
-      options: ["Nabi Isa AS", "Nabi Muhammad SAW", "Nabi Musa AS", "Nabi Ibrahim AS"],
+      options: ["Nabi Isa AS", "Nabi Muhammad saw.", "Nabi Musa AS", "Nabi Ibrahim AS"],
       correct: 1,
-      fact: "Nabi Muhammad SAW adalah nabi dan rasul terakhir (penutup para nabi) yang diutus Allah SWT.",
+      fact: "Nabi Muhammad saw. adalah nabi dan rasul terakhir (penutup para nabi) yang diutus Allah SWT.",
     },
     {
       question: "Apa saja sifat wajib nabi dan rasul?",
@@ -119,7 +119,7 @@ export default function PengertianQuizPage() {
         "Kemampuan nabi untuk berbicara dengan hewan",
       ],
       correct: 1,
-      fact: "Mukjizat adalah kejadian luar biasa yang diberikan Allah kepada para nabi sebagai bukti kenabian mereka, seperti Al-Qur'an untuk Nabi Muhammad SAW.",
+      fact: "Mukjizat adalah kejadian luar biasa yang diberikan Allah kepada para nabi sebagai bukti kenabian mereka, seperti Al-Qur'an untuk Nabi Muhammad saw..",
     },
   ]
 

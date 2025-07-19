@@ -493,7 +493,7 @@ export default function NamaNabiPage() {
                     <p className="text-blue-700">Nabi Isa AS bisa berbicara sejak bayi untuk membela ibunya! Beliau bisa menyembuhkan orang buta, penderita kusta, dan menghidupkan orang mati atas izin Allah.</p>
                   )}
                   {activeProphet === "Muhammad" && (
-                    <p className="text-blue-700">Nabi Muhammad SAW adalah nabi terakhir dan penutup para nabi. Mukjizat terbesar beliau adalah Al-Qur'an yang masih terjaga keasliannya hingga sekarang. Beliau memiliki akhlak yang sangat mulia sehingga dijuluki "Al-Amin" (yang dapat dipercaya).</p>
+                    <p className="text-blue-700">Nabi Muhammad saw. adalah nabi terakhir dan penutup para nabi. Mukjizat terbesar beliau adalah Al-Qur'an yang masih terjaga keasliannya hingga sekarang. Beliau memiliki akhlak yang sangat mulia sehingga dijuluki "Al-Amin" (yang dapat dipercaya).</p>
                   )}
                 </div>
 

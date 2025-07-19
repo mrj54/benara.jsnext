@@ -229,7 +229,7 @@ export default function PengertianPage() {
 
           <div className="bg-green-50 p-4 rounded-xl border border-green-200">
             <p className="text-green-800">
-              <span className="font-bold">Contoh:</span> Nabi Muhammad SAW adalah seorang Nabi dan juga Rasul karena
+              <span className="font-bold">Contoh:</span> Nabi Muhammad saw. adalah seorang Nabi dan juga Rasul karena
               beliau menerima wahyu (Al-Qur'an) dan membawa syariat baru.
             </p>
           </div>
@@ -406,7 +406,7 @@ export default function PengertianPage() {
         >
           <h2 className="text-2xl font-bold text-yellow-700 mb-4 flex items-center gap-2">
             <Star className="w-6 h-6 text-yellow-500" />
-            Anak-Anak, Tahukah Kalian Apakah Iman Itu?
+            Anak-anak, Tahukah Kalian Apakah Iman Itu?
           </h2>
           <div className="space-y-4 text-gray-800">
             <p>
@@ -425,10 +425,10 @@ export default function PengertianPage() {
               </p>
             </div>
             <p>
-              Anak-Anak, tahukah kalian bahwa Nabi Muhammad saw. juga rasul-rasul lain adalah manusia biasa? Ya, mereka makan, minum, mempunyai keluarga dan anak-anak, juga bekerja. Mengapa kita perlu menjadikan mereka teladan dan idola? Karena mereka memiliki akhlak yang baik. Allah mengangkat mereka menjadi rasul, karena memiliki empat sifat yang baik.
+              Anak-anak, tahukah kalian bahwa Nabi Muhammad saw.. juga rasul-rasul lain adalah manusia biasa? Ya, mereka makan, minum, mempunyai keluarga dan anak-anak, juga bekerja. Mengapa kita perlu menjadikan mereka teladan dan idola? Karena mereka memiliki akhlak yang baik. Allah mengangkat mereka menjadi rasul, karena memiliki empat sifat yang baik.
             </p>
             <p>
-              Pertanyaan ini pernah diajukan sahabat kepada Rasulullah saw. Pada suatu hari, Rasulullah saw. berkumpul dengan para sahabatnya. Seketika seorang laki-laki hadir dan bertanya, <span className="italic">"Ya Rasulallah, apakah iman itu?"</span>
+              Pertanyaan ini pernah diajukan sahabat kepada Rasulullah saw.. Pada suatu hari, Rasulullah saw.. berkumpul dengan para sahabatnya. Seketika seorang laki-laki hadir dan bertanya, <span className="italic">"Ya Rasulallah, apakah iman itu?"</span>
             </p>
             <p>
               Rasul menjawab, <span className="font-semibold text-blue-700">"Iman itu kamu percaya kepada Allah, malaikat, kitab-kitab yang diturunkan Allah, rasul-rasul yang diutus-Nya, hari kemudian dan takdir-Nya yang baik dan yang buruk."</span>
@@ -554,7 +554,7 @@ export default function PengertianPage() {
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-5">
                 <p className="leading-relaxed">
                   Ada 5 nabi yang disebut sebagai "Ulul Azmi" karena keteguhan hati mereka yang luar biasa. Mereka
-                  adalah Nabi Nuh AS, Nabi Ibrahim AS, Nabi Musa AS, Nabi Isa AS, dan Nabi Muhammad SAW.
+                  adalah Nabi Nuh AS, Nabi Ibrahim AS, Nabi Musa AS, Nabi Isa AS, dan Nabi Muhammad saw..
                 </p>
               </div>
             </div>

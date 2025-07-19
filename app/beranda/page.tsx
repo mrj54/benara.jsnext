@@ -168,7 +168,7 @@ export default function BerandaPage() {
       <nav className="flex justify-between items-center p-4 md:p-8 bg-white shadow-md fixed w-full top-0 z-[1000]">
         <div className="flex items-center gap-2">
           <Image src="/images/benara-logo.png" alt="Benara Logo" width={40} height={40} className="w-10 h-10" />
-          <span className="text-2xl font-semibold text-[#2B4F60]">Benara.</span>
+          <span className="text-2xl font-semibold text-[#2B4F60]">Benara</span>
         </div>
         <div className="hidden md:flex items-center gap-8">
           <div className="relative group">
@@ -451,8 +451,7 @@ export default function BerandaPage() {
                 Dan Rasul
               </h1>
               <p className="mt-4 text-[#666666] text-lg max-w-[520px] leading-relaxed mx-auto md:mx-0">
-                BENARA ADALAH WEB YANG DIKEMBANGKAN UNTUK ANAK DAPAT BELAJAR KISAH NABI DAN RASUL SECARA DIGITAL,
-                INTERAKTIF.
+                Benara Adalah Web Yang Dikembangkan Untuk Anak Dapat Belajar Kisah Rasul Allah Secara Digital dan Interaktif.
               </p>
               <button
                 onClick={handleStartLearning}
